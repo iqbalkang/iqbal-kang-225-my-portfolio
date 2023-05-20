@@ -1,0 +1,206 @@
+.project {
+  font-family: $ff-primary;
+  &__hero {
+    text-align: center;
+    // @include flex(column);
+    position: relative;
+    padding-bottom: 10rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-family: $ff-secondary;
+  }
+
+  &__macbook-box {
+    // background: url('../images/macbook.png') center/contain no-repeat;
+    @include flex;
+    width: 80vw;
+    height: 40vw;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__macbook-video-box {
+    width: 60vw;
+    height: 37vw;
+    // background-color: pink;
+    position: absolute;
+    // left: 13%;
+    top: 1%;
+    z-index: -1;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+  }
+
+  &__macbook-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // height: 100%;
+  }
+
+  &__btn-container {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+
+  &__btn-outline {
+    border: 1px dashed $text-color;
+    border-radius: 50%;
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  &__btn-link {
+    color: $background-color-light;
+    @include flex;
+    @include circle(calc(5rem + 5vw));
+    background: $background-color-dark;
+    font-size: 1rem;
+  }
+
+  &__intro {
+    background: #d7d5cc;
+    text-align: center;
+    position: relative;
+  }
+
+  &__intro-container {
+    @include flex(column);
+  }
+
+  &__intro-heading-box {
+  }
+
+  &__intro-heading {
+    font-size: 3rem;
+    font-family: $ff-secondary;
+  }
+
+  &__intro-text {
+    max-width: 70rem;
+    margin-bottom: 2rem;
+  }
+
+  &__design {
+    text-align: center;
+    // border: 1px solid pink;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  &__colors-wrapper,
+  &__typography-wrapper {
+    // border: 1px solid yellow;
+    margin-bottom: 4rem;
+  }
+
+  &__colors {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  &__colors-heading,
+  &__typography-heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &__color-box {
+    @include flex(column);
+    gap: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__color {
+    @include circle(10rem);
+    box-shadow: 0 4px 5px rgba($background-color-dark, 0.4);
+
+    &--1 {
+      background-color: #ee7c78;
+    }
+    &--2 {
+      background-color: #ffffff;
+    }
+    &--3 {
+      background-color: #444444;
+    }
+    &--4 {
+      background-color: #fcf1f2;
+    }
+  }
+
+  &__typography-wrapper {
+    // border: 1px solid red;
+  }
+
+  &__typography-name {
+  }
+
+  &__typography-images-box {
+    @include flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 6rem;
+
+    @include big-screen(576px) {
+      gap: 1rem;
+      // align-items: center;
+    }
+  }
+
+  &__typography-image {
+    width: 20vw;
+    min-width: 200px;
+    max-width: 400px;
+  }
+
+  &__tools-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+
+    @include respond(576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__tools-box {
+    @include flex;
+    gap: 2rem;
+  }
+
+  &__tools-heading {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  &__tool {
+    @include flex(column);
+    gap: 0.5rem;
+  }
+
+  &__tool-name {
+    text-transform: capitalize;
+  }
+
+  &__tool-image-box {
+    border: $border;
+    width: 6rem;
+    height: 6rem;
+    padding: 0.4rem;
+    border-radius: $border-radius-sm;
+    box-shadow: 0px 5px 10px rgba($text-color, 0.2);
+  }
+
+  &__tool-image {
+    // height: 4rem;
+    // width: 5rem;
+    object-fit: contain;
+  }
+}

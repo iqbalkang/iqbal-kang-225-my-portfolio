@@ -1,0 +1,102 @@
+export const projectsData = [
+  //featured
+  {
+    name: 'atw',
+    tagLine: 'Social Recommendation Networking Platform',
+    image: './images/project-image.png',
+    belongsTo: 'fullstack',
+    featured: true,
+    pageLink: '',
+  },
+  {
+    name: 'movieous',
+    tagLine: "Movie-Lover's Paradise of Information",
+    image: './images/movieous-art.png',
+    belongsTo: 'fullstack',
+    featured: true,
+  },
+  {
+    name: 'synccart',
+    tagLine: 'Vast, Online Marketplace Bonanza',
+    image: './images/synccart-art.png',
+    belongsTo: 'fullstack',
+    featured: true,
+  },
+  {
+    name: 'caluri',
+    tagLine: 'Track Your Health Journey Delightfully',
+    image: './images/caluri.png',
+    belongsTo: 'react',
+    featured: true,
+  },
+  {
+    name: 'queezy',
+    tagLine: 'Playful Education Adventure Awaits!',
+    image: './images/queezy-art.png',
+    belongsTo: 'vanilla js',
+    featured: true,
+  },
+  {
+    name: 'tohdo',
+    tagLine: 'Get Organized with Ease',
+    image: './images/tohdo-art.png',
+    belongsTo: 'vanilla js',
+    featured: true,
+  },
+  {
+    name: 'luxurify',
+    tagLine: 'Furnish Your Home smartly',
+    image: './images/luxurify-art.png',
+    belongsTo: 'vanilla js',
+    featured: true,
+  },
+  //
+  {
+    name: 'jobopia',
+    tagLine: 'Organize Your Job Hunt',
+    image: '',
+    belongsTo: 'fullstack',
+  },
+  {
+    name: 'aquazilla',
+    tagLine: 'clone',
+    image: './images/aquazilla-art.png',
+    belongsTo: 'vanilla js',
+  },
+  {
+    name: 'spentt',
+    tagLine: 'Money Matters Simplified!',
+    image: './images/spentt-art.png',
+    belongsTo: 'react',
+  },
+  {
+    name: 'cryptourist',
+    tagLine: 'clone',
+    image: '',
+    belongsTo: 'react',
+  },
+  {
+    name: 'newsium',
+    tagLine: 'clone',
+    image: '',
+    belongsTo: 'react',
+  },
+  {
+    name: 'etch-a-sketch',
+    tagLine: 'clone',
+    image: '',
+    belongsTo: 'vanilla js',
+  },
+  {
+    name: 'calculator',
+    tagLine: 'clone',
+    image: '',
+    belongsTo: 'vanilla js',
+  },
+  {
+    name: 'dice-game',
+    tagLine: 'clone',
+    image: '',
+    belongsTo: 'vanilla js',
+  },
+];

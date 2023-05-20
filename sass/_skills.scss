@@ -1,0 +1,102 @@
+.skills {
+  &__heading {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.skill {
+  &__box {
+    font-family: $ff-primary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:hover &--left {
+      animation-play-state: paused;
+    }
+
+    &:hover &--right {
+      animation-play-state: paused;
+    }
+
+    &--left {
+      overflow: hidden;
+      width: 200%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      animation: slide-left 20s linear infinite;
+
+      @include respond(576px) {
+        animation: slide-left 15s linear infinite;
+      }
+    }
+
+    &--right {
+      overflow: hidden;
+      transform: rotateY(180deg) translateX(-0%);
+      transform-origin: 0%;
+      width: 200%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      animation: slide-right 20s linear infinite;
+
+      @include respond(576px) {
+        animation: slide-right 15s linear infinite;
+      }
+    }
+  }
+
+  &__box-container {
+    overflow: hidden;
+  }
+
+  &__single-box {
+    display: flex;
+  }
+
+  &__single {
+    padding: 1.2rem 0;
+    // padding: 1.2rem 1rem; //change back to 0 if it glitches
+    flex-basis: 25%;
+    gap: 1rem;
+    border-top: $border;
+    border-right: $border;
+    border-bottom: $border;
+    @include flex;
+
+    @include respond(1170px) {
+      padding: 1.2rem 1rem; //change back to 0 if it glitches
+    }
+  }
+
+  &__image {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: rotateY(180deg) translateX(-50%);
+  }
+  to {
+    transform: rotateY(180deg) translateX(-100%);
+  }
+}

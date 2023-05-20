@@ -1,0 +1,114 @@
+@mixin respond($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin big-screen($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin circle($radius) {
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(768px) {
+    font-size: 50%;
+  }
+
+  @include big-screen(1470px) {
+    font-size: 75%;
+  }
+
+  @include big-screen(1920px) {
+    font-size: 100%;
+  }
+}
+
+// FBF5F3 snow EEE5E9
+// f2e29f
+$ff-primary: 'Montserrat', sans-serif;
+$ff-secondary: 'Bebas Neue', sans-serif;
+$background-color-dark: #111111;
+$background-color-light: #ffffff;
+$text-color: #777777;
+
+$border-radius: 50px;
+$border-radius-sm: 10px;
+$border: 1px solid $text-color;
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: $ff-secondary;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $text-color;
+  background-color: $background-color-dark;
+
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+
+  @include respond(1170px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-center {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  // border: 1px solid pink;
+}
+
+.btn {
+  font-family: inherit;
+  // letter-spacing: 2px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+section {
+  // min-height: 100vh;
+  // border-top: $border;
+  @include flex(column);
+  padding: 4rem 0;
+}

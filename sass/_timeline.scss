@@ -1,0 +1,96 @@
+.timeline {
+  &__heading {
+    align-self: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+
+  overflow: hidden;
+  // display: block;
+  // justify-content: start;
+  align-items: start;
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    transform: translateX(-100px);
+  }
+  &__duration {
+    width: 20vw;
+    height: 25vw;
+    flex-shrink: 0;
+
+    @include flex(column);
+    align-items: stretch;
+  }
+  &--upper {
+    border-top: 1px solid $text-color;
+    border-left: 1px solid $text-color;
+    position: relative;
+    flex-grow: 10;
+  }
+  &--lower {
+    border-top: 1px solid $text-color;
+    border-left: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    flex-grow: 0.5;
+    padding-inline: 1rem;
+
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-family: $ff-primary;
+    color: $background-color-light;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  &__event {
+    height: 4vw;
+    border-radius: $border-radius-sm;
+    position: absolute;
+    bottom: 1vw;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    opacity: 0;
+
+    @include flex;
+  }
+
+  &--animation {
+    background-color: #499ff1;
+    bottom: 6vw;
+    left: 50%;
+    width: 120%;
+  }
+  &--bachelors {
+    background-color: #90cc2f;
+    left: 40%;
+    width: 200%;
+    opacity: 1;
+  }
+  &--masters {
+    background-color: #fb6753;
+    left: 50%;
+    width: 150%;
+  }
+  &--tyler {
+    background-color: #fb6753;
+    bottom: 11vw;
+    left: 70%;
+    width: 130%;
+  }
+  &--salvation {
+    background-color: #e4db00;
+    bottom: 6vw;
+    left: 50%;
+    width: 150%;
+  }
+  &--bvt {
+    background-color: #835bf1;
+    left: 10%;
+    width: 210%;
+  }
+}

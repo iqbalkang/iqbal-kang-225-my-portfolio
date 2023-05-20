@@ -1,0 +1,84 @@
+.contact {
+  &__wrapper {
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    line-height: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: calc(3rem + 5vw);
+
+    &--english {
+      color: #fbf5f3;
+    }
+    &--spanish {
+      color: #bbb;
+    }
+  }
+
+  &__upper {
+    border-bottom: 1px solid $text-color;
+    flex-grow: 1;
+    @include flex(column);
+  }
+
+  &__lower {
+    // flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    i {
+      font-size: 4vw;
+      color: #fbf5f3;
+    }
+  }
+
+  &__text {
+    font-family: $ff-primary;
+    letter-spacing: 2px;
+    margin: 2rem 0 1rem;
+  }
+
+  &__text-bold {
+    font-size: 6rem;
+    color: #f66b82;
+  }
+
+  &__method {
+    padding: 4rem 0;
+    border-right: 1px solid $text-color;
+    @include flex(column);
+  }
+
+  &__logo {
+    border-left: 1px solid $text-color;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+  }
+
+  &__logo-svg {
+    // display: none;
+    width: 55vw;
+    // width: 800px;
+    // transform: rotate(15deg);
+    transform-origin: left;
+    transform: rotate(20deg) scale(1.2) translate(7%, -7%);
+
+    path {
+      fill: $text-color;
+      // fill: #fbf5f3;
+    }
+  }
+}

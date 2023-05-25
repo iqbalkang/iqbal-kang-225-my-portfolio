@@ -1,12 +1,96 @@
 .about {
-  &__info {
-    height: calc(100vh - 86.5px);
-    background-color: var(--primary-color-light);
-    p {
-      max-width: 80rem;
-      margin: 0 auto;
-      line-height: 2;
-      text-align: center;
-    }
+  font-family: $ff-primary;
+
+  &__heading {
+    font-family: $ff-secondary;
+  }
+  &__btn {
+    background-color: $accent-color;
+    color: $background-color-dark;
+
+    text-transform: capitalize;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    border-radius: $border-radius-sm;
+    letter-spacing: 2px;
+    position: relative;
+    // overflow: hidden;
+    // @include flex;
+    // margin-left: 100px;
+
+    // &:hover.about__btn::before {
+    //   left: 50%;
+    //   transform: skewX(0deg);
+    // }
+
+    // &:hover.about__btn::after {
+    //   left: 0%;
+    //   top: 0;
+    //   transform: skewX(0deg);
+    // }
+
+    // &::before {
+    //   content: '';
+    //   height: 100%;
+    //   width: 50%;
+    //   background: $accent-color;
+    //   position: absolute;
+    //   top: 0;
+    //   left: -2px;
+    //   transform: skewX(30deg);
+    //   z-index: -1;
+    //   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    // }
+
+    // &::after {
+    //   content: '';
+    //   height: 100%;
+    //   width: 50%;
+    //   background: $background-color-light;
+    //   position: absolute;
+    //   top: 5px;
+    //   left: 50%;
+    //   transform: skewX(30deg);
+    //   z-index: -1;
+    //   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    // }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  &__text-box {
+    position: relative;
+    // max-width: 80rem;
+    // margin: 0 auto;
+    // line-height: 2;
+    // text-align: center;
+  }
+
+  &__memoji {
+    // width: 100vw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $background-color-light;
+    // height: 40rem;
+    // width: 40rem;
+    @include flex;
+    // border: $border;
+  }
+
+  &__memoji-video {
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
+    position: relative;
+    transform: scale(1.2) translateY(10%);
+  }
+}
+
+@keyframes rotate-bg {
+  to {
+    transform: rotate(360deg);
   }
 }

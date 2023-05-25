@@ -3,23 +3,52 @@ import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const contactSection = document.querySelector('.contact');
-const headingWrapper = document.querySelector('.contact__heading-wrapper');
-const container = document.querySelector('.container');
-// const contactBox = document.querySelector('.contact__box');
-// const text = document.querySelectorAll('.contact__box > p');
+const contactWrapper = document.querySelector('.contact__wrapper');
+const contactSvg = document.querySelector('.contact__logo-svg');
+const contactHeading = document.querySelectorAll('.contact__heading');
+const contactEmail = document.querySelector('.contact__method--email');
+const contactCursor = document.querySelector('.contact__cursor');
+const contactCopied = document.querySelector('.contact__copied');
 
-const tl = gsap.timeline();
+contactEmail.addEventListener('mousemove', (e) => {
+  const x = e.offsetX;
+  const y = e.offsetY;
 
-tl.from(headingWrapper, { xPercent: 100 });
+  contactCursor.style.display = 'flex';
+  contactCursor.style.top = y + 'px';
+  contactCursor.style.left = x + 'px';
+});
+
+contactEmail.addEventListener('mouseleave', (e) => {
+  contactCursor.style.display = 'none';
+});
+
+contactEmail.addEventListener('click', (e) => {
+  navigator.clipboard.writeText('iqbalkang18@gmail.com');
+  contactCopied.classList.add('active');
+
+  setTimeout(() => {
+    contactCopied.classList.remove('active');
+  }, 1500);
+});
+
+const logoTL = gsap.timeline();
+const headingTl = gsap.timeline();
+
+logoTL.from(contactSvg, { rotate: 45, scale: 0.8 });
+headingTl.from(contactHeading, { yPercent: 100, ease: 'power4.out' });
 
 ScrollTrigger.create({
-  scroller: container,
-  trigger: headingWrapper,
-  markers: true,
-  start: 'top 50%',
+  trigger: contactWrapper,
+  start: '1000px 50%',
   end: '+=300px',
-  // pin: contactSection,
   scrub: 1,
-  animation: tl,
+  animation: logoTL,
+});
+
+ScrollTrigger.create({
+  trigger: contactWrapper,
+  start: '1000px 70%',
+  end: '+=300px',
+  animation: headingTl,
 });

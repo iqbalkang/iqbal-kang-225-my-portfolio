@@ -28,6 +28,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: inherit;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -51,7 +52,8 @@ html {
 $ff-primary: 'Montserrat', sans-serif;
 $ff-secondary: 'Bebas Neue', sans-serif;
 $background-color-dark: #111111;
-$background-color-light: #ffffff;
+$background-color-light: #eeeeee;
+$accent-color: #e9c46a;
 $text-color: #777777;
 
 $border-radius: 50px;

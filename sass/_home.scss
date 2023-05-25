@@ -1,13 +1,23 @@
 .container {
-  max-height: 100vh;
-  overflow-y: scroll;
+  grid-column: 2/-1;
   overflow-x: hidden;
+
   &--project {
     background-color: $background-color-light;
+
+    @include respond(1170px) {
+      grid-column: 1/-1;
+    }
   }
 }
 
 // NAVBAR
+.nav {
+  position: fixed;
+  left: 0;
+  width: 8rem;
+}
+
 .navbar {
   background-color: $background-color-light;
   height: 100vh;
@@ -38,6 +48,49 @@
   &__item:not(:first-child) {
     transform: rotate(180deg);
   }
+
+  &__item {
+    position: relative;
+    line-height: 1;
+    overflow: hidden;
+
+    &:hover {
+      color: $background-color-dark;
+    }
+
+    &:hover .navbar__link--2 {
+      left: 0%;
+    }
+
+    &.active {
+      color: $background-color-dark;
+    }
+
+    // .navbar--project.navbar__item:hover {
+    //   color: $background-color-light !important;
+    // }
+  }
+
+  &__link {
+    transition: all 0.2s ease-in-out;
+
+    &--2 {
+      position: absolute;
+      left: -100%;
+      top: 0;
+    }
+  }
+
+  // &__link {
+  //   &::after {
+  //     content: '';
+  //     @include circle(0.6rem);
+  //     background-color: $accent-color;
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //   }
+  // }
 }
 
 // HERO
@@ -289,4 +342,12 @@
     text-shadow: none;
     transform: none;
   }
+}
+
+.navbar--project .navbar__item:hover {
+  color: $background-color-light;
+}
+
+.navbar--project .navbar__item.active {
+  color: $background-color-light;
 }

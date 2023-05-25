@@ -1,7 +1,5 @@
 .work {
   min-height: 100vh;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
 
   &__tabs {
     @include flex;
@@ -21,20 +19,20 @@
     color: $background-color-light;
   }
 
-  &__sort {
-    @include flex;
-    justify-content: end;
-    margin: 4rem 0 2rem;
+  // &__sort {
+  //   @include flex;
+  //   justify-content: end;
+  //   margin: 4rem 0 2rem;
 
-    &-btn {
-      @include flex;
-      gap: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid $text-color;
-      border-radius: $border-radius;
-      font-size: 0.85rem;
-    }
-  }
+  //   &-btn {
+  //     @include flex;
+  //     gap: 0.5rem;
+  //     padding: 0.5rem 0.75rem;
+  //     border: 1px solid $text-color;
+  //     border-radius: $border-radius;
+  //     font-size: 0.85rem;
+  //   }
+  // }
 
   &__content {
     font-family: $ff-primary;

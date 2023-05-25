@@ -4,7 +4,6 @@ import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const container = document.querySelector('.container');
 const workContainer = document.querySelector('.work__box');
 const projectsContainer = document.querySelector('.work__projects');
 const projectsPhoneContainer = document.querySelector('.work__projects-phone');
@@ -72,20 +71,13 @@ const displayProjectImage = (index, e) => {
   workImages[index].classList.add('active');
 };
 
-const slideInTL = (projects, image) => {
-  const slideInTl = gsap.timeline();
+let slideInTl;
 
+const slideInTL = (projects, image) => {
+  slideInTl = gsap.timeline();
   slideInTl
     .from(projects, { x: '-100px', autoAlpha: 0, stagger: 0.075 })
     .fromTo(image, { autoAlpha: 0, scale: 1.1 }, { autoAlpha: 1, scale: 1 }, '<');
-
-  ScrollTrigger.create({
-    animation: slideInTl,
-    scroller: container,
-    trigger: workContainer,
-    start: 'top 60%',
-    toggleActions: 'restart none none reverse',
-  });
 };
 
 const displayProjects = (projects) => {
@@ -127,3 +119,10 @@ tabButtons.forEach((tabButton) => {
 
 renderProjectsImages(filterProjects('featured'));
 displayProjects(filterProjects('featured'));
+
+ScrollTrigger.create({
+  animation: slideInTl,
+  trigger: workContainer,
+  start: '1000px 60%',
+  toggleActions: 'restart none none reverse',
+});

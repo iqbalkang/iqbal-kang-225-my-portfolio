@@ -1,7 +1,8 @@
 .skills {
+  min-height: 100vh;
   &__heading {
     margin-bottom: 4rem;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
   }
 
   &__box {
@@ -17,6 +18,10 @@
     font-family: $ff-primary;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include respond(576px) {
+      grid-template-columns: 1fr;
+    }
 
     &:hover &--left {
       animation-play-state: paused;
@@ -34,7 +39,7 @@
       animation: slide-left 20s linear infinite;
 
       @include respond(576px) {
-        animation: slide-left 15s linear infinite;
+        animation: slide-left 10s linear infinite;
       }
     }
 
@@ -48,7 +53,8 @@
       animation: slide-right 20s linear infinite;
 
       @include respond(576px) {
-        animation: slide-right 15s linear infinite;
+        animation: slide-right 10s linear infinite;
+        display: none;
       }
     }
   }

@@ -23,7 +23,7 @@
     <nav class="nav">
       <ul class="navbar">
         <li class="navbar__item">
-          <a href="#" class="navbar__link">
+          <a href="#" class="">
             <svg
               class="navbar__logo"
               width="1143"
@@ -67,18 +67,33 @@
             </svg>
           </a>
         </li>
-        <li class="navbar__item"><a href="#" class="navbar__link">about</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">work</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">experiments</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">resume</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">contact</a></li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link navbar__link--1">about</a
+          ><a href="#about" class="navbar__link navbar__link--2">about</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#skills" class="navbar__link navbar__link--1">skills</a
+          ><a href="#skills" class="navbar__link navbar__link--2">skills</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#work" class="navbar__link navbar__link--1">work</a
+          ><a href="#work" class="navbar__link navbar__link--2">work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#resume" class="navbar__link navbar__link--1">resume</a
+          ><a href="#resume" class="navbar__link navbar__link--2">resume</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link navbar__link--1">contact</a
+          ><a href="#contact" class="navbar__link navbar__link--2">contact</a>
+        </li>
       </ul>
     </nav>
 
     <!-- RIGHT SIDE -->
     <main class="container">
       <!-- HEADER -->
-      <header class="hero">
+      <header id="home" class="hero">
         <div class="section-center">
           <div class="hero__content">
             <!-- HERO COMPONENT -->
@@ -182,59 +197,131 @@
       </header>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section id="about" class="about">
         <div class="section-center">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quas obcaecati dolor impedit illum quis
-            atque porro rem quibusdam temporibus omnis labore pariatur error ab, mollitia fugit dolore, cum possimus
-            dolorum corporis est. Adipisci ab voluptates perferendis eveniet omnis eligendi corrupti aperiam sequi,
-            maiores eius iste cupiditate ad nobis. Deserunt facilis nam iste minima alias laborum officiis, ea illo,
-            quod molestias eveniet sint! Vitae sint harum maiores nesciunt porro, molestiae laborum nostrum facere at
-            eum obcaecati et voluptatum accusantium enim sequi doloremque, soluta vero, totam blanditiis dicta eius amet
-            numquam dolor? Nulla fugiat nobis consequuntur ea modi, odio iusto eius ipsam tempore quos libero, provident
-            laborum quam! Perspiciatis rem unde culpa quas quam iusto reiciendis id laboriosam, eius error veniam sint
-            illum esse, asperiores adipisci. Dignissimos dolorem sequi vel illo exercitationem. Quasi quae illum
-            aperiam, obcaecati voluptatibus enim nesciunt sit possimus nam blanditiis incidunt eligendi consequatur
-            fugit quidem consequuntur excepturi, a asperiores repellendus? Asperiores consequuntur aliquid optio nemo.
-            Natus nostrum debitis mollitia laboriosam illum nam reprehenderit, numquam voluptate ipsam hic modi, atque
-            vitae id necessitatibus. Itaque, ipsum hic, sequi repellendus ducimus eligendi quam ullam vitae asperiores
-            quod tempora aspernatur provident assumenda molestias debitis minima officia sed corrupti, corporis possimus
-            magni.
-          </p>
+          <h2 class="about__heading">about me</h2>
+          <div class="about__box">
+            <div class="about__text-box">
+              <p class="about__text">
+                I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the
+                success of the overall product. Check out some of my work in the Projects section. I also like sharing
+                content related to the stuff that I have learned over the years in Web Development so it can help other
+                people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful
+                content related to Web Development and Programming I'm open to Job opportunities where I can contribute,
+                learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate
+                to contact me.
+              </p>
+              <button class="about__btn btn">get in touch</button>
+            </div>
+            <div class="about__memoji">
+              <video autoplay loop muted src="/images/memoji.mov" class="about__memoji-video"></video>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- WORK -->
-      <section class="work">
-        <div class="section-center">
-          <div class="work__box">
-            <div class="work__tabs-box">
-              <ul class="work__tabs">
-                <li class="work__tab"><button class="btn work__tab-btn active">featured</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">fullstack</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">react</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">vanilla js</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">all</button></li>
-              </ul>
+      <!-- TIMELINE -->
+      <section id="timeline" class="timeline">
+        <h2 class="timeline__heading">A Journey Through Time!</h2>
+        <div class="timeline__wrapper">
+          <!-- 0 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2009</p>
             </div>
-            <!-- will be dynamic -->
-            <div class="work__content active">
-              <!-- <div class="work__sort">
-                <button class="btn work__sort-btn">Complexity <i class="ri-arrow-down-line"></i></button>
-              </div> -->
-              <div class="work__projects"></div>
-              <div class="work__image-box"></div>
-
-              <div class="work__projects-phone"></div>
+          </div>
+          <!-- 1 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper">
+              <div class="timeline__event timeline--animation">
+                <p class="timeline__text">VFX & 3D animation</p>
+              </div>
+              <div class="timeline__event timeline--bachelors">
+                <p class="timeline__text">Bachelors in computer science</p>
+              </div>
             </div>
-
-            <!-- upto here -->
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2010</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2012</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper">
+              <div class="timeline__event timeline--masters">
+                <p class="timeline__text">masters in computer science</p>
+              </div>
+            </div>
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2013</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>may</p>
+              <p>2015</p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper">
+              <div class="timeline__event timeline--tyler">
+                <p class="timeline__text">Tyler technologies (intern)</p>
+              </div>
+              <div class="timeline__event timeline--salvation">
+                <p class="timeline__text">red salvation army (instructor)</p>
+              </div>
+              <div class="timeline__event timeline--bvt">
+                <p class="timeline__text">Web development bootcamp</p>
+              </div>
+            </div>
+            <div class="timeline--lower">
+              <p>may</p>
+              <p>2022</p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>oct</p>
+              <p>2022</p>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>jan</p>
+              <p>2024</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- SKILLS -->
-      <section class="skills">
+      <section id="skills" class="skills">
         <h2 class="skills__heading">"Tapping Into My Digital Toolbox"</h2>
         <div class="skills__box">
           <div class="skill__box">
@@ -571,131 +658,80 @@
         </div>
       </section>
 
-      <!-- TIMELINE -->
-      <section class="timeline">
-        <h2 class="timeline__heading">A Journey Through Time!</h2>
-        <div class="timeline__wrapper">
-          <!-- 0 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2009</p>
+      <!-- WORK -->
+      <section id="work" class="work">
+        <div class="section-center">
+          <div class="work__box">
+            <div class="work__tabs-box">
+              <ul class="work__tabs">
+                <li class="work__tab"><button class="btn work__tab-btn active">featured</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">fullstack</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">react</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">vanilla js</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">all</button></li>
+              </ul>
             </div>
-          </div>
-          <!-- 1 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper">
-              <div class="timeline__event timeline--animation">
-                <p class="timeline__text">VFX & 3D animation</p>
-              </div>
-              <div class="timeline__event timeline--bachelors">
-                <p class="timeline__text">Bachelors in computer science</p>
-              </div>
+            <!-- will be dynamic -->
+            <div class="work__content active">
+              <!-- <div class="work__sort">
+                <button class="btn work__sort-btn">Complexity <i class="ri-arrow-down-line"></i></button>
+              </div> -->
+              <div class="work__projects"></div>
+              <div class="work__image-box"></div>
+
+              <div class="work__projects-phone"></div>
             </div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2010</p>
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2012</p>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper">
-              <div class="timeline__event timeline--masters">
-                <p class="timeline__text">masters in computer science</p>
-              </div>
-            </div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2013</p>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>may</p>
-              <p>2015</p>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper">
-              <div class="timeline__event timeline--tyler">
-                <p class="timeline__text">Tyler technologies</p>
-              </div>
-              <div class="timeline__event timeline--salvation">
-                <p class="timeline__text">instructor at red salvation</p>
-              </div>
-              <div class="timeline__event timeline--bvt">
-                <p class="timeline__text">Web development course</p>
-              </div>
-            </div>
-            <div class="timeline--lower">
-              <p>may</p>
-              <p>2022</p>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>oct</p>
-              <p>2022</p>
-            </div>
-          </div>
-          <!-- 7 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2023</p>
-            </div>
-          </div>
-          <!-- 8 -->
-          <div class="timeline__duration">
-            <div class="timeline--upper"></div>
-            <div class="timeline--lower">
-              <p>jan</p>
-              <p>2024</p>
-            </div>
+
+            <!-- upto here -->
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact__wrapper">
           <div class="contact__left">
             <div class="contact__upper">
-              <h2 class="contact__heading contact__heading--english">contact me</h2>
-              <!-- <h2 class="contact__heading contact__heading--spanish">Contáctame</h2>
-              <h2 class="contact__heading contact__heading--french">Contactez-moi</h2> -->
+              <div class="contact__heading-box">
+                <h2 class="contact__heading">get in touch</h2>
+              </div>
             </div>
             <div class="contact__lower">
-              <div class="contact__method">
+              <div class="contact__method contact__method--email">
+                <div class="contact__cursor">
+                  <svg
+                    fill="#000000"
+                    height="800px"
+                    width="800px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 442 442"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <polygon points="291,0 51,0 51,332 121,332 121,80 291,80 	" />
+                      <polygon points="306,125 306,195 376,195 	" />
+                      <polygon points="276,225 276,110 151,110 151,442 391,442 391,225 	" />
+                    </g>
+                  </svg>
+                  <div class="contact__copied">Copied</div>
+                </div>
                 <i class="ri-mail-fill"></i>
                 <p class="contact__text">Send me a</p>
                 <span class="contact__text-bold">message</span>
               </div>
-              <div class="contact__method">
+              <a target="_blank" href="https://github.com/iqbalkang225" class="contact__method">
                 <i class="ri-github-fill"></i>
                 <p class="contact__text">See my work</p>
                 <span class="contact__text-bold">github</span>
-              </div>
-              <div class="contact__method">
+              </a>
+              <a target="_blank" href="https://linkedin.com/in/iqbalkang225" class="contact__method">
                 <i class="ri-linkedin-box-fill"></i>
                 <p class="contact__text">Find me on</p>
                 <span class="contact__text-bold">linkedin</span>
-              </div>
+              </a>
             </div>
           </div>
           <div class="contact__logo">
@@ -734,6 +770,18 @@
               </g>
             </svg>
           </div>
+        </div>
+        <div class="contact__motivation">
+          <p>Turning ambitions into reality, one line at a time</p>
+          <div class="contact__seperator"></div>
+          <p>Turning ambitions into reality, one line at a time</p>
+          <div class="contact__seperator"></div>
+          <p>Turning ambitions into reality, one line at a time</p>
+          <div class="contact__seperator"></div>
+          <p>Turning ambitions into reality, one line at a time</p>
+          <div class="contact__seperator"></div>
+          <p>Turning ambitions into reality, one line at a time</p>
+          <div class="contact__seperator"></div>
         </div>
       </section>
 

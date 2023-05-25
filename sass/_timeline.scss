@@ -1,13 +1,12 @@
 .timeline {
+  min-height: 100vh;
   &__heading {
     align-self: center;
     margin-bottom: 4rem;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
   }
 
   overflow: hidden;
-  // display: block;
-  // justify-content: start;
   align-items: start;
   &__wrapper {
     overflow: hidden;
@@ -44,6 +43,7 @@
     font-family: $ff-primary;
     color: $background-color-light;
     font-size: 1.2rem;
+
     text-transform: capitalize;
   }
 
@@ -60,30 +60,30 @@
   }
 
   &--animation {
-    background-color: #499ff1;
+    background-color: #ad2e24;
     bottom: 6vw;
     left: 50%;
     width: 120%;
   }
   &--bachelors {
-    background-color: #90cc2f;
+    background-color: #499ff1;
     left: 40%;
     width: 200%;
     opacity: 1;
   }
   &--masters {
-    background-color: #fb6753;
+    background-color: #cf1259;
     left: 50%;
     width: 150%;
   }
   &--tyler {
-    background-color: #fb6753;
+    background-color: #ea526f;
     bottom: 11vw;
     left: 70%;
     width: 130%;
   }
   &--salvation {
-    background-color: #e4db00;
+    background-color: #00916e;
     bottom: 6vw;
     left: 50%;
     width: 150%;

@@ -2,32 +2,38 @@
   font-family: $ff-primary;
   &__hero {
     text-align: center;
-    // @include flex(column);
     position: relative;
     padding-bottom: 10rem;
   }
 
   &__heading {
-    font-size: 4rem;
+    font-size: calc(4rem + 4vw);
     font-family: $ff-secondary;
+    line-height: 1;
   }
 
   &__macbook-box {
-    // background: url('../images/macbook.png') center/contain no-repeat;
     @include flex;
     width: 80vw;
     height: 40vw;
     margin: 0 auto;
     position: relative;
     z-index: 1;
+
+    @include respond(1176px) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__macbook {
+    width: 100%;
+    height: 100%;
   }
 
   &__macbook-video-box {
     width: 60vw;
     height: 37vw;
-    // background-color: pink;
     position: absolute;
-    // left: 13%;
     top: 1%;
     z-index: -1;
     border-radius: $border-radius-sm;
@@ -35,10 +41,10 @@
   }
 
   &__macbook-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     // height: 100%;
+    height: 100%;
+    width: 100%;
+    transform: scaleY(1.1);
   }
 
   &__btn-container {
@@ -63,6 +69,20 @@
     font-size: 1rem;
   }
 
+  &__details-box {
+    @include flex;
+    gap: 4rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    color: $background-color-dark;
+
+    @include respond(976px) {
+      @include flex(column);
+      gap: 0;
+    }
+  }
+
   &__intro {
     background: #d7d5cc;
     text-align: center;
@@ -74,16 +94,22 @@
   }
 
   &__intro-heading-box {
+    @include flex;
+    gap: 2rem;
   }
 
   &__intro-heading {
-    font-size: 3rem;
+    font-size: calc(2rem + 2vw);
     font-family: $ff-secondary;
   }
 
   &__intro-text {
     max-width: 70rem;
     margin-bottom: 2rem;
+  }
+
+  &__link:hover {
+    color: black;
   }
 
   &__design {
@@ -199,8 +225,65 @@
   }
 
   &__tool-image {
-    // height: 4rem;
-    // width: 5rem;
     object-fit: contain;
+  }
+
+  &__features-container {
+    background: radial-gradient(#eeeeee, #d7d5cc);
+  }
+
+  &__features-heading {
+    font-size: calc(2rem + 2vw);
+    margin-bottom: 4rem;
+  }
+
+  &__features {
+    @include flex(column);
+    gap: calc(2rem + 5vw);
+  }
+
+  &__feature {
+    position: relative;
+    @include flex;
+  }
+
+  &__text {
+    position: absolute;
+    font-size: calc(2rem + 10vw);
+    font-family: $ff-secondary;
+    top: 50%;
+
+    transform: translateY(-50%);
+    line-height: 0.8;
+
+    &--1 {
+      color: $background-color-dark;
+      z-index: 1;
+    }
+    &--2 {
+      -webkit-text-stroke-width: 0.4vw;
+      -webkit-text-stroke-color: $background-color-light;
+      color: transparent;
+      z-index: 3;
+    }
+  }
+
+  &__image-box {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba($background-color-dark, 0.2);
+  }
+
+  &__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: $background-color-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
   }
 }

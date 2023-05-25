@@ -4,7 +4,6 @@ import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 gsap.registerPlugin(ScrollTrigger);
 
 const timelineSection = document.querySelector('.timeline');
-const container = document.querySelector('.container');
 const timelineWrapper = document.querySelector('.timeline__wrapper');
 const bachelors = document.querySelector('.timeline--bachelors');
 const animation = document.querySelector('.timeline--animation');
@@ -31,21 +30,18 @@ eventTL
   .from(tyler, { width: '90%', duration: 0.75 }, '<');
 
 ScrollTrigger.create({
-  scroller: container,
   trigger: timelineSection,
-  // markers: true,
   start: 'top 0%',
   end: '+=1000px',
-  pin: true,
-  scrub: true,
-  animation: experienceTL,
+  scrub: 1,
+  animation: eventTL,
 });
 
 ScrollTrigger.create({
-  scroller: container,
   trigger: timelineSection,
   start: 'top 0%',
   end: '+=1000px',
-  scrub: true,
-  animation: eventTL,
+  pin: true,
+  scrub: 1,
+  animation: experienceTL,
 });

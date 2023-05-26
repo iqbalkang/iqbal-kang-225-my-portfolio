@@ -1,9 +1,9 @@
 import { gsap } from '/node_modules/gsap/index.js';
-import { projectsData } from '../projectsData.js';
 import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
+import { projectsData } from '../projectsData.js';
 const workContainer = document.querySelector('.work__box');
 const projectsContainer = document.querySelector('.work__projects');
 const projectsPhoneContainer = document.querySelector('.work__projects-phone');
@@ -19,7 +19,7 @@ const filterProjects = (type) => {
 };
 
 const renderProjectHTML = (project) => {
-  return ` <a href="project.html" class="work__project">
+  return ` <a href="project.html?project=${project.name}" class="work__project">
              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
              <span class="work__project-info">${project.tagLine}</span>
            </a>`;

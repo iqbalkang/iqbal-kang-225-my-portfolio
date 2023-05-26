@@ -967,29 +967,32 @@ section {
     width: 10rem;
     border-radius: 50%;
     box-shadow: 0 4px 5px rgba(17, 17, 17, 0.4); }
-    .project__color--1 {
-      background-color: #ee7c78; }
-    .project__color--2 {
-      background-color: #ffffff; }
-    .project__color--3 {
-      background-color: #444444; }
-    .project__color--4 {
-      background-color: #fcf1f2; }
-  .project__typography-images-box {
+  .project__typography-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 6rem; }
-    @media screen and (min-width: 576px) {
-      .project__typography-images-box {
-        gap: 1rem; } }
-  .project__typography-image {
-    width: 20vw;
-    min-width: 200px;
-    max-width: 400px; }
+    row-gap: 4rem;
+    text-transform: capitalize; }
+    @media screen and (max-width: 768px) {
+      .project__typography-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; } }
+  .project__typography {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem; }
+  .project__typography-image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .project__typography-image-box img {
+      width: 88%; }
   .project__tools-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

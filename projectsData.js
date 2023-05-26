@@ -100,3 +100,85 @@ export const projectsData = [
     belongsTo: 'vanilla js',
   },
 ];
+
+export const singleProjectsData = [
+  {
+    name: 'around the world',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis voluptates labore debitis adipisci doloremque mollitia unde ut tenetur. Ea quae sapiente soluta totam, illum nemo eos deleniti voluptate hic, tempora provident architecto optio obcaecati, ullam officia cumque id reprehenderit fugit sunt consequuntur excepturi qui! Eveniet maxime est a vero?',
+    video: './images/atwvideo.mp4',
+    liveSite: '',
+    colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
+    fonts: [{ name: 'montserrat', image: './images/montserratfont.png' }],
+    stack: [
+      {
+        type: 'front end',
+        tools: [
+          { name: 'react', image: '/images/react.png' },
+          { name: 'redux', image: '/images/redux.png' },
+          { name: 'tailwind', image: '/images/tailwind.png' },
+        ],
+      },
+      {
+        type: 'deployment',
+        tools: [
+          { name: 'vercel', image: '/images/vercel.png' },
+          { name: 'netlify', image: '/images/netlify.png' },
+        ],
+      },
+    ],
+  },
+
+  {
+    name: 'caluri',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis voluptates labore debitis adipisci doloremque mollitia unde ut tenetur. Ea quae sapiente soluta totam, illum nemo eos deleniti voluptate hic, tempora provident architecto optio obcaecati, ullam officia cumque id reprehenderit fugit sunt consequuntur excepturi qui! Eveniet maxime est a vero?',
+    video: './images/calurivideo.mp4',
+    liveSite: '',
+    colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
+    fonts: [{ name: 'montserrat', image: './images/montserratfont.png' }],
+    stack: [
+      {
+        type: 'front end',
+        tools: [
+          { name: 'react', image: '/images/react.png' },
+          { name: 'redux', image: '/images/redux.png' },
+          { name: 'tailwind', image: '/images/tailwind.png' },
+        ],
+      },
+      {
+        type: 'deployment',
+        tools: [
+          { name: 'vercel', image: '/images/vercel.png' },
+          { name: 'netlify', image: '/images/netlify.png' },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'queezy',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis voluptates labore debitis adipisci doloremque mollitia unde ut tenetur. Ea quae sapiente soluta totam, illum nemo eos deleniti voluptate hic, tempora provident architecto optio obcaecati, ullam officia cumque id reprehenderit fugit sunt consequuntur excepturi qui! Eveniet maxime est a vero?',
+    video: '/images/queezyvideo.mp4',
+    liveSite: '',
+    colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
+    fonts: [{ name: 'montserrat', image: './images/montserratfont.png' }],
+    stack: [
+      {
+        type: 'front end',
+        tools: [
+          { name: 'react', image: '/images/react.png' },
+          { name: 'redux', image: '/images/redux.png' },
+          { name: 'tailwind', image: '/images/tailwind.png' },
+        ],
+      },
+      {
+        type: 'deployment',
+        tools: [
+          { name: 'vercel', image: '/images/vercel.png' },
+          { name: 'netlify', image: '/images/netlify.png' },
+        ],
+      },
+    ],
+  },
+];

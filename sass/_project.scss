@@ -85,7 +85,6 @@
 
   &__intro {
     background: #d7d5cc;
-    text-align: center;
     position: relative;
   }
 
@@ -230,14 +229,26 @@
   &__feature {
     position: relative;
     @include flex;
+
+    // &:nth-child(odd) {
+    //   .project__text {
+    //     left: -10%;
+    //   }
+    // }
+
+    // &:nth-child(even) {
+    //   .project__text {
+    //     right: -10%;
+    //   }
+    // }
   }
 
   &__text {
     position: absolute;
-    font-size: calc(2rem + 10vw);
+    // font-size: calc(2rem + 10vw);
+    font-size: calc(2rem + 5vw);
     font-family: $ff-secondary;
     top: 50%;
-
     transform: translateY(-50%);
     line-height: 0.8;
 
@@ -246,7 +257,7 @@
       z-index: 1;
     }
     &--2 {
-      -webkit-text-stroke-width: 0.4vw;
+      -webkit-text-stroke-width: 0.2vw;
       -webkit-text-stroke-color: $background-color-light;
       color: transparent;
       z-index: 3;
@@ -269,6 +280,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.15;
+    opacity: 0.5;
   }
 }

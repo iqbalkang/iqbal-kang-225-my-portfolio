@@ -18,8 +18,19 @@ const filterProjects = (type) => {
   return projectsData.filter((project) => project.belongsTo === type);
 };
 
+// const renderProjectHTML = (project) => {
+//   return ` <a href="project.html?project=${project.name}" class="work__project">
+//              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
+//              <span class="work__project-info">${project.tagLine}</span>
+//            </a>`;
+// };
+
 const renderProjectHTML = (project) => {
-  return ` <a href="project.html?project=${project.name}" class="work__project">
+  let link;
+  if (!project.ownPage) link = project.liveLink;
+  else link = `project.html?project=${project.name}`;
+
+  return ` <a href="${link}" class="work__project">
              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
              <span class="work__project-info">${project.tagLine}</span>
            </a>`;

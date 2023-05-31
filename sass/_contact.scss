@@ -161,6 +161,7 @@
   }
 
   &__copied {
+    white-space: nowrap;
     opacity: 1;
     position: absolute;
     top: -2.5rem;

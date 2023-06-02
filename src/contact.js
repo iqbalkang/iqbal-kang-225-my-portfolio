@@ -2,6 +2,7 @@ import { gsap } from '/node_modules/gsap/index.js';
 import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.saveStyles('.contact__wrapper, .contact__logo-svg, .contact__heading');
 
 const contactWrapper = document.querySelector('.contact__wrapper');
 const contactSvg = document.querySelector('.contact__logo-svg');
@@ -32,23 +33,52 @@ contactEmail.addEventListener('click', (e) => {
   }, 1500);
 });
 
-const logoTL = gsap.timeline();
-const headingTl = gsap.timeline();
+ScrollTrigger.matchMedia({
+  '(min-width: 1170px)': function () {
+    const logoTL = gsap.timeline();
+    const headingTl = gsap.timeline();
 
-logoTL.from(contactSvg, { rotate: 45, scale: 0.8 });
-headingTl.from(contactHeading, { yPercent: 100, ease: 'power4.out' });
+    logoTL.from(contactSvg, { rotate: 45, scale: 0.8 });
+    headingTl.from(contactHeading, { yPercent: 100, ease: 'power4.out' });
 
-ScrollTrigger.create({
-  trigger: contactWrapper,
-  start: '1000px 50%',
-  end: '+=300px',
-  scrub: 1,
-  animation: logoTL,
-});
+    ScrollTrigger.create({
+      trigger: contactWrapper,
+      start: '1000px 50%',
+      end: '+=300px',
+      scrub: 1,
+      animation: logoTL,
+    });
 
-ScrollTrigger.create({
-  trigger: contactWrapper,
-  start: '1000px 70%',
-  end: '+=300px',
-  animation: headingTl,
+    ScrollTrigger.create({
+      trigger: contactWrapper,
+      start: '1000px 70%',
+      end: '+=300px',
+      animation: headingTl,
+      toggleActions: 'play none play reverse',
+    });
+  },
+
+  '(max-width: 1169px)': function () {
+    const logoTL = gsap.timeline();
+    const headingTl = gsap.timeline();
+
+    logoTL.from(contactSvg, { rotate: 45, scale: 0.8 });
+    headingTl.from(contactHeading, { yPercent: 100, ease: 'power4.out' });
+
+    ScrollTrigger.create({
+      trigger: contactWrapper,
+      start: 'top 50%',
+      end: '+=300px',
+      scrub: 1,
+      animation: logoTL,
+    });
+
+    ScrollTrigger.create({
+      trigger: contactWrapper,
+      start: 'top 70%',
+      end: '+=300px',
+      animation: headingTl,
+      toggleActions: 'play none play reverse',
+    });
+  },
 });

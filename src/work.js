@@ -25,10 +25,15 @@ const filterProjects = (type) => {
 //            </a>`;
 // };
 
-const renderProjectHTML = (project) => {
+const generateLink = (project) => {
   let link;
   if (!project.ownPage) link = project.liveLink;
   else link = `project.html?project=${project.name}`;
+  return link;
+};
+
+const renderProjectHTML = (project) => {
+  const link = generateLink(project);
 
   return ` <a href="${link}" class="work__project">
              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
@@ -37,7 +42,8 @@ const renderProjectHTML = (project) => {
 };
 
 const renderPhoneProjectHTML = (project) => {
-  return ` <a href="#" class="work__project-phone">
+  const link = generateLink(project);
+  return ` <a href="${link}" class="work__project-phone">
              <div class="work__project-phone-overlay"></div>
              <img src="${project.image}" alt="project image" class="work__image-phone" />
              <div class="work__project-phone-info-box">
@@ -136,4 +142,15 @@ ScrollTrigger.create({
   trigger: workContainer,
   start: '1000px 60%',
   toggleActions: 'restart none none reverse',
+});
+
+ScrollTrigger.matchMedia({
+  '(max-width: 1169px)': function () {
+    ScrollTrigger.create({
+      animation: slideInTl,
+      trigger: workContainer,
+      start: 'top 60%',
+      toggleActions: 'restart none none reverse',
+    });
+  },
 });

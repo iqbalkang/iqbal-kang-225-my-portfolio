@@ -36,7 +36,8 @@
     position: absolute;
     top: 1%;
     z-index: -1;
-    border-radius: $border-radius-sm;
+    border-top-left-radius: $border-radius-sm;
+    border-top-right-radius: $border-radius-sm;
     overflow: hidden;
   }
 
@@ -45,6 +46,7 @@
     height: 100%;
     width: 100%;
     transform: scaleY(1.1);
+    // transform-origin: top top;
   }
 
   &__btn-container {

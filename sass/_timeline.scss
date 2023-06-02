@@ -1,5 +1,10 @@
 .timeline {
   min-height: 100vh;
+
+  @include respond(1170px) {
+    display: none;
+  }
+
   &__heading {
     align-self: center;
     margin-bottom: 4rem;

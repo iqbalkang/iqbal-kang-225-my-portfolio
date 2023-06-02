@@ -71,12 +71,59 @@ section {
       .container--project {
         grid-column: 1/-1; } }
 
-.nav {
-  position: fixed;
-  left: 0;
-  width: 8rem; }
+.nav.nav--project .navbar {
+  background-color: #111111; }
 
-.navbar {
+.nav.nav--project .navbar__btn--line {
+  background-color: #111111; }
+
+.nav.nav--project .navbar__item:hover {
+  color: #eeeeee; }
+
+.nav.nav--project .navbar--phone {
+  background-color: #eeeeee; }
+
+.nav.nav--project .navbar__item--phone:hover {
+  color: #111111; }
+
+.navbar__toggle-btn {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: fixed;
+  right: 5rem;
+  top: 2rem;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 8rem;
+  height: 8rem; }
+  @media screen and (min-width: 1170px) {
+    .navbar__toggle-btn {
+      display: none; } }
+
+.navbar__btn--circle {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 1px solid #777777;
+  opacity: 0;
+  position: absolute;
+  transform: scale(0);
+  transition: all 0.5s ease-out; }
+
+.navbar__btn--line {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 1px;
+  background-color: #eeeeee; }
+  .navbar__btn--line-1 {
+    width: 40%;
+    transform: translateX(25%); }
+  .navbar__btn--line-2 {
+    width: 60%; }
+
+.navbar--desktop {
   background-color: #eeeeee;
   height: 100vh;
   width: 100%;
@@ -84,45 +131,90 @@ section {
   font-size: 2.2rem;
   letter-spacing: 0.25px;
   writing-mode: vertical-lr;
+  position: fixed;
+  left: 0;
+  width: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row; }
   @media screen and (max-width: 1170px) {
-    .navbar {
+    .navbar--desktop {
       display: none; } }
-  .navbar--project {
-    background-color: #111111; }
-  .navbar__logo {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%; }
-    .navbar__logo path {
-      fill: #777777; }
-  .navbar__item:not(:first-child) {
-    transform: rotate(180deg); }
-  .navbar__item {
-    position: relative;
-    line-height: 1;
-    overflow: hidden; }
-    .navbar__item:hover {
-      color: #111111; }
-    .navbar__item:hover .navbar__link--2 {
-      left: 0%; }
-    .navbar__item.active {
-      color: #111111; }
-  .navbar__link {
+
+.navbar--phone {
+  background-color: #111111;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  font-size: calc(6rem + 5vw);
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-100%); }
+  @media screen and (min-width: 1170px) {
+    .navbar--phone {
+      display: none; } }
+
+.navbar__logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%; }
+  .navbar__logo path {
+    fill: #777777; }
+
+.navbar__item:not(:first-child) {
+  transform: rotate(180deg); }
+
+.navbar__item {
+  position: relative;
+  line-height: 1;
+  overflow: hidden; }
+  .navbar__item--phone-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem; }
+  .navbar__item--phone {
+    overflow: hidden;
     transition: all 0.2s ease-in-out; }
-    .navbar__link--2 {
-      position: absolute;
-      left: -100%;
-      top: 0; }
+    .navbar__item--phone:hover {
+      color: #e9c46a; }
+    .navbar__item--phone span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2vw; }
+    .navbar__item--phone--2 {
+      transform: translateX(30%); }
+    .navbar__item--phone--3 {
+      transform: translateX(60%); }
+    .navbar__item--phone--4 {
+      transform: translateX(30%); }
+    .navbar__item--phone--5 {
+      transform: translateX(0%); }
+  .navbar__item:hover {
+    color: #111111; }
+  .navbar__item:hover .navbar__link--2 {
+    left: 100%; }
+  .navbar__item.active {
+    color: #111111; }
+
+.navbar__link {
+  transition: all 0.5s ease-in-out; }
+  .navbar__link--2 {
+    position: absolute;
+    left: -100%;
+    top: 0; }
 
 .hero {
-  background: url("../images/mesh.svg") repeat-x;
   min-height: 100vh;
   width: 100%;
   position: relative; }
+  .hero__section {
+    overflow: visible; }
   .hero__scroll-box {
     display: flex;
     justify-content: center;
@@ -161,9 +253,6 @@ section {
   .hero__component-box {
     flex-grow: 4;
     align-self: start; }
-  .hero__component-text {
-    font-family: "Montserrat", sans-serif;
-    color: #eeeeee; }
   .hero__heading-box {
     flex-grow: 1; }
   .hero__heading-top {
@@ -653,10 +742,11 @@ section {
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
   display: none; }
-  .contact__cursor svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: #111111; }
+  .contact__cursor-text {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.4; }
 
 .contact__copied {
   white-space: nowrap;
@@ -761,6 +851,9 @@ section {
   min-height: 100vh;
   overflow: hidden;
   align-items: start; }
+  @media screen and (max-width: 1170px) {
+    .timeline {
+      display: none; } }
   .timeline__heading {
     align-self: center;
     margin-bottom: 4rem;
@@ -873,7 +966,8 @@ section {
     position: absolute;
     top: 1%;
     z-index: -1;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     overflow: hidden; }
   .project__macbook-video {
     height: 100%;

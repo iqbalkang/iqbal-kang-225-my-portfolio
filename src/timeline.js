@@ -15,7 +15,26 @@ const salvation = document.querySelector('.timeline--salvation');
 const experienceTL = gsap.timeline();
 const eventTL = gsap.timeline();
 
-experienceTL.to(timelineWrapper, { x: '-1000px' });
+// experienceTL.to(timelineWrapper, { x: '-1000px' });
+
+ScrollTrigger.matchMedia({
+  '(min-width: 1170px)': function () {
+    experienceTL.to(timelineWrapper, { x: '-1000px' });
+  },
+});
+
+ScrollTrigger.matchMedia({
+  '(min-width: 1710px)': function () {
+    experienceTL.to(timelineWrapper, { x: '-1200px' });
+  },
+});
+
+ScrollTrigger.matchMedia({
+  '(min-width: 2048px)': function () {
+    experienceTL.to(timelineWrapper, { x: '-1500px' });
+  },
+});
+
 eventTL
   .from(bachelors, { width: '100%', opacity: 1, duration: 1 })
   .to(animation, { opacity: 1, duration: 0.05 }, '<+=0.01')

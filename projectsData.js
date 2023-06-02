@@ -140,7 +140,7 @@ export const singleProjectsData = [
       'You can add posts to your favorites to build your very own gallery of favorite spots. You can comment, reply, and give thumbs up or react to reviews and posts. ATW sends live notifications for all of these events, so you stay updated and never miss out!',
       " Our easy-to-use interface allows you to easily log in and start engaging with the world around you. So get ready to explore! And don't forget to follow your friends and make new ones here at ATW. Join today and become part of the ATW revolution!",
     ],
-    video: './images/atw/atwvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
     liveSite: '',
     colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
     fonts: [{ name: 'Josefin Sans', image: './images/montserratfont.png' }],
@@ -148,42 +148,81 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
-          { name: 'react', image: '/images/react.png' },
-          { name: 'tailwind', image: '/images/tailwind.png' },
+          { name: 'redux', image: '/images/tools/redux.png' },
+          { name: 'react', image: '/images/tools/react.png' },
+          { name: 'tailwind', image: '/images/tools/tailwind.png' },
         ],
       },
       {
         type: 'back end',
         tools: [
-          { name: 'postgresql', image: '/images/postgresql.png' },
-          { name: 'express', image: '/images/express.png' },
-          { name: 'node', image: '/images/node.png' },
+          { name: 'postgresql', image: '/images/tools/postgresql.png' },
+          { name: 'express', image: '/images/tools/express.png' },
+          { name: 'node', image: '/images/tools/node.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: '/images/nginx.png' },
-          { name: 'aws', image: '/images/aws.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'nginx', image: '/images/tools/nginx.png' },
+          { name: 'aws', image: '/images/tools/aws.png' },
+          { name: 'github', image: '/images/tools/github.png' },
         ],
       },
     ],
     highlights: [
-      { highlight: 'user feedback platform', image: './images/atw/userfeedbackplatform.png' },
-      { highlight: 'mapping exploration', image: './images/atw/mappingexploration.png' },
-      { highlight: 'tag your posts', image: './images/atw/tagyourposts.png' },
-      { highlight: 'real time notifications', image: './images/atw/realtimenotifications.png' },
-      { highlight: 'intelligent suggestions', image: './images/atw/intelligentsuggestions.png' },
-      { highlight: 'connect & grow', image: './images/atw/connect&grow.png' },
-      { highlight: 'privacy personified', image: './images/atw/privacypersonified.png' },
-      { highlight: 'hearts of fun', image: './images/atw/heartsoffun.png' },
-      { highlight: 'follow restricted posts', image: './images/atw/followrestrictedposts.png' },
-      { highlight: 'interactive comment reactions', image: './images/atw/interactivecommentreactions.png' },
-      { highlight: 'tag team up', image: './images/atw/tagteamup.png' },
-      { highlight: 'trackable connections', image: './images/atw/trackableconnections.png' },
-      { highlight: 'interactive dialogue flow', image: './images/atw/interactivedialogueflow.png' },
+      {
+        highlight: 'user feedback platform',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/userfeedbackplatform_olaans.png',
+      },
+      {
+        highlight: 'interactive dialogue flow',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/interactivedialogueflow_hcvu3d.png',
+      },
+      {
+        highlight: 'tag team up',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/tagteamup_dtxoyx.png',
+      },
+      {
+        highlight: 'real time notifications',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/realtimenotifications_cuq2nz.png',
+      },
+      {
+        highlight: 'interactive comment reactions',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/interactivecommentreactions_jksyhf.png',
+      },
+      {
+        highlight: 'follow restricted posts',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/followrestrictedposts_b5uie6.png',
+      },
+      {
+        highlight: 'connect & grow',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/connect_grow_rardyd.png',
+      },
+      {
+        highlight: 'trackable connections',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/trackableconnections_xqtwr6.png',
+      },
+      {
+        highlight: 'privacy personified',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741146/privacypersonified_rlcxes.png',
+      },
+      {
+        highlight: 'tag your posts',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/tagyourposts_glasx4.png',
+      },
+      {
+        highlight: 'intelligent suggestions',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741150/intelligentsuggestions_m1f3yj.png',
+      },
+      {
+        highlight: 'hearts of fun',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/heartsoffun_iizrsj.png',
+      },
+      {
+        highlight: 'mapping exploration',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741150/mappingexploration_n6q8ey.png',
+      },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
   },
@@ -238,17 +277,50 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'Watch Movie Previews', image: './images/movieous/watchmoviepreviews.png' },
-      { highlight: 'Secure User Verification', image: './images/movieous/secureuserverification.png' },
-      { highlight: 'Recover forgotten passwords', image: './images/movieous/recoverforgottenpasswords.png' },
-      { highlight: 'Toggleable Themes', image: './images/movieous/toggleablethemes.png' },
-      { highlight: 'Smart Browse Recommendations', image: './images/movieous/smartbrowserecommendations.png' },
-      { highlight: 'Interactive Critiques', image: './images/movieous/interactivecritiques.png' },
-      { highlight: 'Admin Domain Portal', image: './images/movieous/admindomainportal.png' },
-      { highlight: 'Background Video Processing', image: './images/movieous/backgroundvideoprocessing.png' },
-      { highlight: 'Dynamic Form Filling', image: './images/movieous/dynamicformfilling.png' },
-      { highlight: 'Easy Data Entry', image: './images/movieous/easydataentry.png' },
-      { highlight: 'Insights Before Submit', image: './images/movieous/insightsbeforesubmit.png' },
+      {
+        highlight: 'Watch Movie Previews',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742032/watchmoviepreviews_spykjp.png',
+      },
+      {
+        highlight: 'Secure User Verification',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/secureuserverification_b94hkb.png',
+      },
+      {
+        highlight: 'Recover forgotten passwords',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/recoverforgottenpasswords_nvggyr.png',
+      },
+      {
+        highlight: 'Toggleable Themes',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742030/toggleablethemes_etrebz.png',
+      },
+      {
+        highlight: 'Smart Browse Recommendations',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742031/smartbrowserecommendations_l5uyhw.png',
+      },
+      {
+        highlight: 'Interactive Critiques',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742031/interactivecritiques_bhkwfa.png',
+      },
+      {
+        highlight: 'Admin Domain Portal',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/admindomainportal_mv4wqv.png',
+      },
+      {
+        highlight: 'Background Video Processing',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/backgroundvideoprocessing_ssukbi.png',
+      },
+      {
+        highlight: 'Dynamic Form Filling',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/dynamicformfilling_uepy87.png',
+      },
+      {
+        highlight: 'Easy Data Entry',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/easydataentry_hpojxn.png',
+      },
+      {
+        highlight: 'Insights Before Submit',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/insightsbeforesubmit_zjhqsq.png',
+      },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
   },
@@ -262,7 +334,7 @@ export const singleProjectsData = [
       'Not only do we offer a great selection and top quality, but our prices are unbeatable as well! Let us be your one-stop-shop for healthy and safe supplements.',
       'Start shopping your way to a healthier you with SyncCart today!',
     ],
-    video: './images/synccart/synccartvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
     liveSite: '',
     colors: ['#ffffff', '#000000', '#bfdbfe', '#ef4444', '#7f7f7f', '#ebb305'],
     fonts: [{ name: 'roboto', image: './images/montserratfont.png' }],
@@ -293,15 +365,42 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'customer feedback', image: './images/synccart/customerfeedback.png' },
-      { highlight: 'stock controlled shopping', image: './images/synccart/stockcontrolledshopping.png' },
-      { highlight: 'product ratings insight', image: './images/synccart/productratingsinsight.png' },
-      { highlight: 'stock safeguard', image: './images/synccart/stocksafeguard.png' },
-      { highlight: 'address autosave and populate', image: './images/synccart/addressautosaveandpopulate.png' },
-      { highlight: 'retain shopping cart', image: './images/synccart/retainshoppingcart.png' },
-      { highlight: 'admin control panel', image: './images/synccart/admincontrolpanel.png' },
-      { highlight: 'manage product inventory', image: './images/synccart/manageproductinventory.png' },
-      { highlight: 'elevate user privileges', image: './images/synccart/elevateprivileges.png' },
+      {
+        highlight: 'customer feedback',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/customerfeedback_kd2s2w.png',
+      },
+      {
+        highlight: 'stock controlled shopping',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/stockcontrolledshopping_mqnil2.png',
+      },
+      {
+        highlight: 'product ratings insight',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/productratingsinsight_gmkfe3.png',
+      },
+      {
+        highlight: 'stock safeguard',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/stocksafeguard_z1mune.png',
+      },
+      {
+        highlight: 'address autosave and populate',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/addressautosaveandpopulate_ht8jtg.png',
+      },
+      {
+        highlight: 'retain shopping cart',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/retainshoppingcart_klgcck.png',
+      },
+      {
+        highlight: 'admin control panel',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/admincontrolpanel_gdzfz5.png',
+      },
+      {
+        highlight: 'manage product inventory',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/manageproductinventory_exnyvp.png',
+      },
+      {
+        highlight: 'elevate user privileges',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/elevateprivileges_cd7sr2.png',
+      },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
   },
@@ -316,7 +415,7 @@ export const singleProjectsData = [
       'With our revolutionary calorie tracking website, you’ll be able to easily monitor your daily diet, set goals, and see improvements with just a few clicks. Our extensive database of foods and their nutrition values makes it easy for you to track your calories and nutrients, so you can make smarter decisions about what you eat and when.',
       'Say goodbye to complicated charts and fad diets - let Caluri guide you to smarter eating and a healthier you. Join us today!',
     ],
-    video: './images/caluri/calurivideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738144/calurivideo2_iwmtlh.mp4',
     liveSite: '',
     colors: [
       '#001c06',
@@ -350,10 +449,22 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'personalized tracking', image: './images/caluri/personalizedtracking.png' },
-      { highlight: 'track macros', image: './images/caluri/trackmacros.png' },
-      { highlight: 'group meals', image: './images/caluri/groupmeals.png' },
-      { highlight: 'update info', image: './images/caluri/updateinfo.png' },
+      {
+        highlight: 'personalized tracking',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/personalizedtracking_jxa860.png',
+      },
+      {
+        highlight: 'track macros',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/trackmacros_tqo4em.png',
+      },
+      {
+        highlight: 'group meals',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742505/groupmeals_bcpatg.png',
+      },
+      {
+        highlight: 'update info',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/updateinfo_fjm7tr.png',
+      },
     ],
   },
 
@@ -367,7 +478,7 @@ export const singleProjectsData = [
       "With our state-of-the-art tracking system, you'll be able to monitor and manage all of your spending and investment activities in one convenient place. No more need to switch between multiple accounts or applications to get a complete financial overview. Using Spentt, you'll have everything you need to make informed financial decisions and start building wealth.",
       "With our revolutionary expense tracker, you'll have complete peace of mind knowing exactly when you're spending and investing - and finally, reaching your financial goals. Join spentt, get the most out of every penny and start your financial journey today!",
     ],
-    video: './images/spentt/spenttvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738330/spenttvideo_2_mqyda2.mp4',
     liveSite: '',
     colors: ['#ecdcfa', '#271d30', '#88838e', '#ffffff', '#faff7f', '#c617d6', '#1626b5'],
     fonts: [{ name: 'poppins', image: './images/montserratfont.png' }],
@@ -390,11 +501,26 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'Low Balance Alerts', image: './images/spentt/lowbalancealerts.png' },
-      { highlight: 'Live Asset Pricing', image: './images/spentt/liveassetpricing.png' },
-      { highlight: 'Manage Financial Groups', image: './images/spentt/managefinancialgroups.png' },
-      { highlight: 'Insightful Investment Gains', image: './images/spentt/insightfulinvestmentgains.png' },
-      { highlight: 'Crunching Loss Data', image: './images/spentt/crunchinglossdata.png' },
+      {
+        highlight: 'Low Balance Alerts',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/lowbalancealerts_pm0tfj.png',
+      },
+      {
+        highlight: 'Live Asset Pricing',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/liveassetpricing_ozjwle.png',
+      },
+      {
+        highlight: 'Manage Financial Groups',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/managefinancialgroups_jlskao.png',
+      },
+      {
+        highlight: 'Insightful Investment Gains',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/insightfulinvestmentgains_mfhqve.png',
+      },
+      {
+        highlight: 'Crunching Loss Data',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/crunchinglossdata_qfypvi.png',
+      },
     ],
   },
 
@@ -406,7 +532,7 @@ export const singleProjectsData = [
       "Whether you're a quiz enthusiast, a trivia buff, or just looking to kill some time, Queezy has the perfect quiz for you. So what are you waiting for? Join the Queezy community to test your knowledge, and prove that you can be a master of random trivia.",
       'So, don’t delay, get queazeying!',
     ],
-    video: '/images/queezy/queezyvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685737797/queezyvideo2_zoy575.mp4',
     liveSite: '',
     colors: ['#fd0200', '#f3a13c', '#0542b8', '#136a04', '#000000', '#ffffff'],
     fonts: [{ name: 'montserrat', image: './images/montserratfont.png' }],
@@ -429,13 +555,34 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'create or play', image: './images/queezy/createorplay.png' },
-      { highlight: 'Points Allocation System', image: './images/queezy/pointsallocationsystem.png' },
-      { highlight: 'Timed Challenge', image: './images/queezy/timedchallenge.png' },
-      { highlight: 'True/false questions', image: './images/queezy/truefalse.png' },
-      { highlight: 'MCQ questions', image: './images/queezy/mcq.png' },
-      { highlight: 'Explore Quizzes', image: './images/queezy/explorequizzes.png' },
-      { highlight: 'Dynamic Leaderboard', image: './images/queezy/dynamicleaderboard.png' },
+      {
+        highlight: 'create or play',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/createorplay_odcvc6.png',
+      },
+      {
+        highlight: 'Points Allocation System',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/pointsallocationsystem_lmoz7o.png',
+      },
+      {
+        highlight: 'Timed Challenge',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/timedchallenge_thct1j.png',
+      },
+      {
+        highlight: 'True/false questions',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/truefalse_fjs6gz.png',
+      },
+      {
+        highlight: 'MCQ questions',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/mcq_jbezpw.png',
+      },
+      {
+        highlight: 'Explore Quizzes',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/explorequizzes_umotlr.png',
+      },
+      {
+        highlight: 'Dynamic Leaderboard',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/dynamicleaderboard_sgsnlj.png',
+      },
     ],
   },
 
@@ -449,7 +596,7 @@ export const singleProjectsData = [
       'Using Tohdo you can safely say goodbye to lost notes and lists.',
       " Don't wait, take back control of your daily productivity and get organized with Tohdo, so you can seize the moment and get things done – without the stress.",
     ],
-    video: '/images/tohdo/tohdovideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738702/tohdovideo2_yoxmst.mp4',
     liveSite: '',
     colors: ['#330033', '#ffffff', '#000000', '#bc1119', '#a3892e', '#678c2a'],
     fonts: [{ name: 'poppins', image: './images/montserratfont.png' }],
@@ -472,11 +619,26 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'Cross-Group Visibility', image: './images/tohdo/crossgroupvisibility.png' },
-      { highlight: 'Organize todos', image: './images/tohdo/organizetodos.png' },
-      { highlight: 'Organize Tasks Priorities', image: './images/tohdo/organizetaskspriorities.png' },
-      { highlight: 'Track completed tasks', image: './images/tohdo/trackcompletedtasks.png' },
-      { highlight: 'customize todo grouping', image: './images/tohdo/customizetodogrouping.png' },
+      {
+        highlight: 'Organize Tasks Priorities',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743097/organizetaskspriorities_oeo9t4.png',
+      },
+      {
+        highlight: 'Organize todos',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/organizetodos_zqlcv5.png',
+      },
+      {
+        highlight: 'Track completed tasks',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/trackcompletedtasks_o48utt.png',
+      },
+      {
+        highlight: 'customize todo grouping',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/customizetodogrouping_tzhrl0.png',
+      },
+      {
+        highlight: 'Cross-Group Visibility',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743097/crossgroupvisibility_exd9nu.png',
+      },
     ],
   },
 
@@ -489,7 +651,7 @@ export const singleProjectsData = [
       'With our vast selection of items from sofas to desks, we are sure to have something that will perfectly fit your lifestyle. Whether you are looking to update your living room with a new couch, or want to spruce up your workspace with an executive chair, Luxurify has just what you need. We only source top of the line pieces from the leading manufacturers, so you can be sure that your new furniture will stand the test of time.',
       'Browse through our extensive selection of products and find the perfect piece for your desired space and create an individual look that will turn heads. Experience the luxury of Luxurify today and make your house the envy of the street!',
     ],
-    video: '/images/luxurify/luxurifyvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738247/luxurifyvideo2_nbkplk.mp4',
     liveSite: '',
     colors: ['#feeab9', '#700000', '#ffffff', '#da0612', '#5f4201'],
     fonts: [
@@ -515,9 +677,18 @@ export const singleProjectsData = [
       },
     ],
     highlights: [
-      { highlight: 'Filterable Product Search', image: './images/luxurify/filterableproductsearch.png' },
-      { highlight: 'Retain Shopping Cart', image: './images/luxurify/retainshoppingcart.png' },
-      { highlight: 'Showcase Selection', image: './images/luxurify/showcaseselection.png' },
+      {
+        highlight: 'Filterable Product Search',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/filterableproductsearch_cym0cr.png',
+      },
+      {
+        highlight: 'Retain Shopping Cart',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/retainshoppingcart_h6t6ir.png',
+      },
+      {
+        highlight: 'Showcase Selection',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742859/showcaseselection_rcbq27.png',
+      },
     ],
   },
 ];

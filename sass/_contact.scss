@@ -152,11 +152,11 @@
     font-family: $ff-primary;
     display: none;
 
-    svg {
-      width: 2.5rem;
-      height: 2.5rem;
-
-      fill: $background-color-dark;
+    &-text {
+      font-size: 1rem;
+      text-align: center;
+      text-transform: capitalize;
+      line-height: 1.4;
     }
   }
 

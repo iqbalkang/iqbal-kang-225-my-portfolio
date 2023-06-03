@@ -4,6 +4,7 @@ import './src/work.js';
 import './src/contact.js';
 import './src/timeline.js';
 import './src/about.js';
+
 // import { get } from "./src/utils.js";
 // import { fetchProducts } from "./src/fetchProducts.js";
 // import { setupStore, store } from "./src/setupStore.js";

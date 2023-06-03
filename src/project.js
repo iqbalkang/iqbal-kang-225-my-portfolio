@@ -1,16 +1,24 @@
 import './navbar.js';
+import './next.js';
 
 // import { gsap } from '/node_modules/gsap/index.js';
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-import { singleProjectsData } from '../projectsData.js';
+import { singleProjectsData, projectsData } from '../projectsData.js';
+const liveBtnContainer = document.querySelector('.project__btn-container');
 const liveBtn = document.querySelector('.project__btn-link');
 const liveBtnText = document.querySelector('.project__btn-link span');
 const liveBtnOutline = document.querySelector('.project__btn-outline');
-// const projectFeaturesContainer = document.querySelector('.project__features');
-// const projectFeatures = document.querySelectorAll('.project__feature');
+
+const projectIntroSection = document.querySelector('.project__intro');
+
+const nextProjectHeading = document.querySelector('.project__next-heading');
+const nextProjectImage = document.querySelector('.project__next-image');
+const nextProjectBtn = document.querySelector('.project__next-next');
+const projectColorsWrapper = document.querySelector('.project__colors-wrapper');
+const projectToolsBox = document.querySelector('.project__tools-box');
 
 const animateHighlights = (feature, index) => {
   let tl = gsap.timeline();
@@ -29,6 +37,19 @@ const animateHighlights = (feature, index) => {
 };
 
 let project;
+let nextProject;
+
+const loadNextProject = () => {
+  const { name, image } = nextProject;
+  nextProjectHeading.textContent = name;
+
+  nextProjectImage.src = image;
+  nextProjectBtn.href = `project.html?project=${name}`;
+};
+
+nextProjectImage.addEventListener('click', () => {
+  window.location.href = `project.html?project=${nextProject.name}`;
+});
 
 const renderProjectName = () => {
   const { name } = project;
@@ -147,8 +168,16 @@ const generateStack = (s) => {
   toolsBox.appendChild(toolBox);
 };
 
+// refactor
 const renderColors = () => {
   project.colors.map((color) => generateColor(color));
+
+  ScrollTrigger.create({
+    trigger: projectColorsWrapper,
+    start: 'top 80%',
+    animation: gsap.from('.project__color-box', { yPercent: 50, stagger: 0.1, duration: 1, ease: 'power4' }),
+    toggleActions: 'play none none reverse',
+  });
 };
 
 const renderFonts = () => {
@@ -157,6 +186,17 @@ const renderFonts = () => {
 
 const renderStack = () => {
   project.stack.map((s) => generateStack(s));
+
+  console.log(document.querySelectorAll('.project__tool'));
+  console.log(projectToolsBox);
+
+  ScrollTrigger.create({
+    trigger: '.project__tools-box',
+    // markers: true,
+    start: 'top 80%',
+    animation: gsap.from('.project__tool', { yPercent: 50, stagger: 0.05 }),
+    toggleActions: 'play none none reverse',
+  });
 };
 
 const renderLoginDetails = () => {
@@ -193,6 +233,7 @@ const loadProject = () => {
   renderLoginDetails();
   renderHighlights();
   renderProjectDescription();
+  loadNextProject();
 };
 
 const init = () => {
@@ -205,31 +246,51 @@ const init = () => {
 
   project = getSingleProject(selectedProjectName);
 
+  const getNextProject = () => {
+    const selectedProjectIndex = projectsData.findIndex((p) => p.name === selectedProjectName);
+    nextProject = projectsData[selectedProjectIndex + 1];
+
+    if (nextProject.featured) nextProject;
+    else nextProject = projectsData[0];
+  };
+
+  getNextProject();
   loadProject();
 };
 
 window.addEventListener('DOMContentLoaded', init);
 
-// liveBtnOutline.addEventListener('mousemove', (e) => {
-//   e.stopImmediatePropagation();
-//   const position = liveBtnOutline.getBoundingClientRect();
-//   const x = e.clientX - position.left - position.width / 2;
-//   const y = e.clientY - position.top - position.height / 2;
+liveBtnOutline.addEventListener('mousemove', (e) => {
+  e.stopImmediatePropagation();
+  const position = liveBtnOutline.getBoundingClientRect();
+  const x = e.clientX - position.left - position.width / 2;
+  const y = e.clientY - position.top - position.height / 2;
 
-//   console.log(e.pageY);
+  gsap.to(liveBtn, { x: x * 0.4, y: y * 0.4, ease: 'power(4)' });
+  gsap.to(liveBtnText, { x: x * 0.2, y: y * 0.2, ease: 'power(4)' });
+});
 
-//   gsap.to(liveBtn, { x: x * 0.4, y: y * 0.4, ease: 'power(4)' });
-//   gsap.to(liveBtnText, { x: x * 0.2, y: y * 0.2, ease: 'power(4)' });
-// });
+liveBtnOutline.addEventListener('mouseleave', (e) => {
+  // const position = liveBtnOutline.getBoundingClientRect();
+  // const x = e.pageX - position.left - position.width / 2;
+  // const y = e.pageY - position.top - position.height / 2;
 
-// liveBtnOutline.addEventListener('mouseleave', (e) => {
-//   const position = liveBtnOutline.getBoundingClientRect();
-//   const x = e.pageX - position.left - position.width / 2;
-//   const y = e.pageY - position.top - position.height / 2;
+  gsap.to(liveBtn, { x: 0, y: 0, ease: 'elastic' });
+  gsap.to(liveBtnText, { x: 0, y: 0, ease: 'elastic' });
+});
 
-//   gsap.to(liveBtn, { x: 0, y: 0, ease: 'elastic' });
-//   gsap.to(liveBtnText, { x: 0, y: 0, ease: 'elastic' });
-// });
+const projectIntroScrollTl = gsap.timeline();
+
+projectIntroScrollTl.from(liveBtnContainer, { yPercent: 10 });
+
+ScrollTrigger.create({
+  trigger: projectIntroSection,
+  // markers: true,
+  start: 'top 100%',
+  end: '+50px 80%',
+  animation: projectIntroScrollTl,
+  scrub: 1,
+});
 
 // projectFeatures.forEach((feature, index) => {
 //   let tl = gsap.timeline();

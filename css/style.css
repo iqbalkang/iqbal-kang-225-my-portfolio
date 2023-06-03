@@ -1167,3 +1167,97 @@ section {
     top: 0;
     left: 0;
     opacity: 0.5; }
+  .project__next {
+    background: #111111;
+    border-left: 1px solid #777777;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    gap: 6rem; }
+    @media screen and (max-width: 768px) {
+      .project__next {
+        height: auto;
+        padding-inline: 4rem; } }
+    .project__next-moon {
+      position: absolute;
+      bottom: -400px;
+      z-index: -1;
+      opacity: 0.4; }
+      @media screen and (min-width: 1920px) {
+        .project__next-moon {
+          bottom: 0; } }
+    .project__next-top {
+      border-bottom: 1px solid #777777;
+      flex-grow: 1;
+      width: 100%;
+      max-width: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden; }
+      .project__next-top p {
+        color: #e9c46a; }
+    .project__next-heading {
+      font-size: calc(2rem + 5vw);
+      color: #eeeeee;
+      line-height: 1;
+      padding-bottom: 15rem;
+      font-family: "Bebas Neue", sans-serif; }
+    .project__next-image {
+      width: 25rem;
+      position: absolute;
+      bottom: 0%;
+      transform: translateY(50%);
+      cursor: pointer; }
+    .project__next-middle {
+      width: 100%;
+      max-width: 70rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 2rem; }
+    @media screen and (max-width: 410px) {
+      .project__next-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: start; } }
+
+.project__next-all, .project__next-next {
+  border: 1px solid #eeeeee;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-radius: 50px;
+  color: #eeeeee;
+  position: relative;
+  overflow: hidden; }
+  .project__next-all:hover, .project__next-next:hover {
+    color: #111111; }
+  .project__next-all:hover::after, .project__next-next:hover::after {
+    width: 100%;
+    opacity: 1; }
+  .project__next-all::after, .project__next-next::after {
+    content: '';
+    width: 70%;
+    height: 100%;
+    opacity: 0;
+    background-color: #eeeeee;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    border-radius: 50px; }

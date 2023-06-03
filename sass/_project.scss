@@ -284,4 +284,126 @@
     left: 0;
     opacity: 0.5;
   }
+
+  &__next {
+    background: $background-color-dark;
+    border-left: $border;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    // padding-bottom: 1rem;
+
+    @include respond(768px) {
+      height: auto;
+      padding-inline: 4rem;
+    }
+
+    @include flex(column);
+    justify-content: end;
+    gap: 6rem;
+
+    &-moon {
+      position: absolute;
+      // top: -30%;
+      bottom: -400px;
+      z-index: -1;
+      opacity: 0.4;
+      // transform: rotate(180deg);
+
+      @include big-screen(1920px) {
+        bottom: 0;
+      }
+    }
+
+    &-top {
+      border-bottom: $border;
+      flex-grow: 1;
+      width: 100%;
+      max-width: 50rem;
+      @include flex(column);
+      position: relative;
+      overflow: hidden;
+
+      p {
+        color: $accent-color;
+      }
+    }
+
+    &-heading {
+      font-size: calc(2rem + 5vw);
+      color: $background-color-light;
+      line-height: 1;
+      padding-bottom: 15rem;
+      font-family: $ff-secondary;
+    }
+
+    &-image {
+      width: 25rem;
+      position: absolute;
+      bottom: 0%;
+      transform: translateY(50%);
+      cursor: pointer;
+      // border-radius: $border-radius-sm;
+    }
+
+    &-middle {
+      width: 100%;
+      max-width: 70rem;
+
+      @include flex;
+      gap: 2rem;
+    }
+
+    &-all {
+      @extend %nextBtns;
+    }
+
+    &-next {
+      @extend %nextBtns;
+    }
+
+    &-icons {
+      @include respond(410px) {
+        @include flex(column);
+        gap: 2rem;
+        align-items: start;
+      }
+    }
+  }
+}
+
+%nextBtns {
+  border: $border-white;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-radius: $border-radius;
+  color: $background-color-light;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    color: $background-color-dark;
+  }
+
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &::after {
+    content: '';
+    width: 70%;
+    height: 100%;
+    opacity: 0;
+    background-color: $background-color-light;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    border-radius: $border-radius;
+  }
 }

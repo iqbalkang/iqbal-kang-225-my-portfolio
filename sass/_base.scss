@@ -115,3 +115,12 @@ section {
   @include flex(column);
   padding: 4rem 0;
 }
+
+%section-heading {
+  margin-bottom: 4rem;
+  font-size: calc(2rem + 2vw);
+
+  span {
+    color: $accent-color;
+  }
+}

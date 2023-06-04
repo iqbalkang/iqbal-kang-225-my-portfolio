@@ -62,6 +62,12 @@ section {
   flex-direction: column;
   padding: 4rem 0; }
 
+.skills__heading, .timeline__heading {
+  margin-bottom: 4rem;
+  font-size: calc(2rem + 2vw); }
+  .skills__heading span, .timeline__heading span {
+    color: #e9c46a; }
+
 .container {
   grid-column: 2/-1;
   overflow-x: hidden; }
@@ -147,7 +153,6 @@ section {
   position: fixed;
   z-index: 1000;
   inset: 0;
-  font-size: calc(6rem + 5vw);
   line-height: 1;
   display: flex;
   justify-content: center;
@@ -181,7 +186,8 @@ section {
     gap: 2rem; }
   .navbar__item--phone {
     overflow: hidden;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    font-size: calc(6rem + 5vw); }
     .navbar__item--phone:hover {
       color: #e9c46a; }
     .navbar__item--phone span {
@@ -323,11 +329,16 @@ section {
       background-position: -100%; }
   .hero__icon-box {
     border: 1px solid #777777;
+    transition: border 0.75s ease-in-out;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
-    transition: border 0.75s ease-in-out; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
   .hero__icon {
-    font-size: 2rem;
-    padding: 0.75rem; }
+    font-size: 2rem; }
     .hero__icon-seperator {
       height: 0.15rem;
       width: 5rem;
@@ -401,6 +412,12 @@ section {
 .navbar--project .navbar__item.active {
   color: #eeeeee; }
 
+.navbar--phone-icons {
+  position: absolute;
+  left: 50px;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: 0%; }
+
 .work {
   min-height: 100vh; }
   .work__tabs {
@@ -416,7 +433,8 @@ section {
   .work__tab-btn {
     font-size: 2.4rem; }
   .work__tab-btn.active {
-    color: #eeeeee; }
+    color: #eeeeee;
+    color: #e9c46a; }
   .work__content {
     font-family: "Montserrat", sans-serif;
     color: #eeeeee;
@@ -538,9 +556,6 @@ section {
 
 .skills {
   min-height: 100vh; }
-  .skills__heading {
-    margin-bottom: 4rem;
-    font-size: calc(2rem + 2vw); }
   .skills__box {
     width: 100%;
     display: flex;
@@ -855,9 +870,7 @@ section {
     .timeline {
       display: none; } }
   .timeline__heading {
-    align-self: center;
-    margin-bottom: 4rem;
-    font-size: calc(2rem + 2vw); }
+    align-self: center; }
   .timeline__wrapper {
     overflow: hidden;
     position: relative;

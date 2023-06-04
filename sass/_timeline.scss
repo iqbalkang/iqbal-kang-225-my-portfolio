@@ -7,8 +7,7 @@
 
   &__heading {
     align-self: center;
-    margin-bottom: 4rem;
-    font-size: calc(2rem + 2vw);
+    @extend %section-heading;
   }
 
   overflow: hidden;

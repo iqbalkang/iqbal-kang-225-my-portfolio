@@ -10,8 +10,10 @@ const headingSeperators = document.querySelectorAll('.hero__heading-seperator');
 const heading = document.querySelectorAll('.stack');
 const scroll = document.querySelector('.hero__scroll');
 const headingBottom = document.querySelector('.hero__heading-bottom');
-const heroIcons = document.querySelector('.hero__icons-box');
+const heroIcons = document.querySelector('.hero__icons-only-box');
 const heroTextSvgs = document.querySelectorAll('.hero__component-text path');
+
+// console.log(heroIcons);
 
 heroTextSvgs.forEach((svg) => {
   const length = svg.getTotalLength();

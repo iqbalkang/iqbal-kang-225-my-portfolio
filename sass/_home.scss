@@ -151,7 +151,7 @@
     position: fixed;
     z-index: 1000;
     inset: 0;
-    font-size: calc(6rem + 5vw);
+    // font-size: calc(6rem + 5vw);
     line-height: 1;
     @include flex(column);
     opacity: 0;
@@ -191,6 +191,7 @@
     &--phone {
       overflow: hidden;
       transition: all 0.2s ease-in-out;
+      font-size: calc(6rem + 5vw);
 
       &:hover {
         color: $accent-color;
@@ -220,6 +221,7 @@
 
     &:hover .navbar__link--2 {
       left: 100%;
+      // color: $accent-color;
     }
 
     &.active {
@@ -425,13 +427,13 @@
 
   &__icon-box {
     border: $border;
-    border-radius: 50%;
     transition: border 0.75s ease-in-out;
+    @include circle(3.5rem);
+    @include flex;
   }
 
   &__icon {
     font-size: 2rem;
-    padding: 0.75rem;
 
     &-seperator {
       height: 0.15rem;
@@ -533,3 +535,19 @@
 //     stroke-dashoffset: 285;
 //   }
 // }
+
+// .navbar--phone-icons {
+//   position: absolute;
+//   transform: rotate(-90deg);
+//   left: 0;
+//   border: $border;
+// }
+
+.navbar--phone-icons {
+  position: absolute;
+  left: 50px;
+  // bottom: 0;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: 0%;
+  // display: none;
+}

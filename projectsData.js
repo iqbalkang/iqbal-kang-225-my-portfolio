@@ -148,25 +148,34 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/tools/redux.png' },
-          { name: 'react', image: '/images/tools/react.png' },
-          { name: 'tailwind', image: '/images/tools/tailwind.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
+          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          {
+            name: 'tailwind',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+          },
         ],
       },
       {
         type: 'back end',
         tools: [
-          { name: 'postgresql', image: '/images/tools/postgresql.png' },
-          { name: 'express', image: '/images/tools/express.png' },
-          { name: 'node', image: '/images/tools/node.png' },
+          {
+            name: 'postgresql',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/postgresql_smgop3.png',
+          },
+          {
+            name: 'express',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+          },
+          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: '/images/tools/nginx.png' },
-          { name: 'aws', image: '/images/tools/aws.png' },
-          { name: 'github', image: '/images/tools/github.png' },
+          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
+          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -254,25 +263,37 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'react', image: '/images/react.png' },
-          { name: 'javascript', image: '/images/javascript.png' },
-          { name: 'tailwind', image: '/images/tailwind.png' },
+          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          {
+            name: 'javascript',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+          },
+          {
+            name: 'tailwind',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+          },
         ],
       },
       {
         type: 'back end',
         tools: [
-          { name: 'mongodb', image: '/images/mongodb.png' },
-          { name: 'express', image: '/images/express.png' },
-          { name: 'node', image: '/images/node.png' },
+          {
+            name: 'mongodb',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/mongodb_x2tz1l.png',
+          },
+          {
+            name: 'express',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+          },
+          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: '/images/nginx.png' },
-          { name: 'aws', image: '/images/aws.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
+          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -342,25 +363,31 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
-          { name: 'react', image: '/images/react.png' },
-          { name: 'tailwind', image: '/images/tailwind.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
+          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          {
+            name: 'tailwind',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+          },
         ],
       },
       {
         type: 'back end',
         tools: [
-          { name: 'mysql', image: '/images/mysql.png' },
-          { name: 'express', image: '/images/express.png' },
-          { name: 'node', image: '/images/node.png' },
+          { name: 'mysql', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/mysql_adan4k.png' },
+          {
+            name: 'express',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+          },
+          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: '/images/nginx.png' },
-          { name: 'aws', image: '/images/aws.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
+          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -435,16 +462,22 @@ export const singleProjectsData = [
         type: 'front end',
         tools: [
           { name: 'redux', image: '/images/redux.png' },
-          { name: 'react', image: '/images/react.png' },
-          { name: 'tailwind', image: '/images/tailwind.png' },
+          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          {
+            name: 'tailwind',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+          },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'netlify', image: '/images/netlify.png' },
-          { name: 'vercel', image: '/images/vercel.png' },
-          { name: 'github', image: '/images/github.png' },
+          {
+            name: 'netlify',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+          },
+          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -487,16 +520,25 @@ export const singleProjectsData = [
         type: 'front end',
         tools: [
           { name: 'redux', image: '/images/redux.png' },
-          { name: 'javascript', image: '/images/javascript.png' },
-          { name: 'tailwind', image: '/images/tailwind.png' },
+          {
+            name: 'javascript',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+          },
+          {
+            name: 'tailwind',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+          },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'netlify', image: '/images/netlify.png' },
-          { name: 'vercel', image: '/images/vercel.png' },
-          { name: 'github', image: '/images/github.png' },
+          {
+            name: 'netlify',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+          },
+          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -540,17 +582,23 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'javascript', image: '/images/javascript.png' },
-          { name: 'css', image: '/images/css.png' },
-          { name: 'html', image: '/images/html.png' },
+          {
+            name: 'javascript',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+          },
+          { name: 'sass', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/sass_jmt7bq.png' },
+          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: '/images/vercel.png' },
-          { name: 'netlify', image: '/images/netlify.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          {
+            name: 'netlify',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+          },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -604,17 +652,23 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'javascript', image: '/images/javascript.png' },
-          { name: 'css', image: '/images/css.png' },
-          { name: 'html', image: '/images/html.png' },
+          {
+            name: 'javascript',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+          },
+          { name: 'css', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/css_sbtyjv.png' },
+          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: '/images/vercel.png' },
-          { name: 'netlify', image: '/images/netlify.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          {
+            name: 'netlify',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+          },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],
@@ -662,17 +716,23 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'javascript', image: '/images/javascript.png' },
-          { name: 'css', image: '/images/css.png' },
-          { name: 'html', image: '/images/html.png' },
+          {
+            name: 'javascript',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+          },
+          { name: 'sass', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/sass_jmt7bq.png' },
+          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: '/images/vercel.png' },
-          { name: 'netlify', image: '/images/netlify.png' },
-          { name: 'github', image: '/images/github.png' },
+          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          {
+            name: 'netlify',
+            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+          },
+          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
         ],
       },
     ],

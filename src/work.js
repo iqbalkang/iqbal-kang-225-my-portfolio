@@ -35,7 +35,7 @@ const generateLink = (project) => {
 const renderProjectHTML = (project) => {
   const link = generateLink(project);
 
-  return ` <a href="${link}" class="work__project">
+  return ` <a target="_blank" href="${link}" class="work__project">
              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
              <span class="work__project-info">${project.tagLine}</span>
            </a>`;

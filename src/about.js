@@ -2,7 +2,7 @@
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 // import { ScrollToPlugin } from '/node_modules/gsap/ScrollToPlugin.js';
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const aboutSection = document.querySelector('.about');
 const aboutBtn = document.querySelector('.about__btn');

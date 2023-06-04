@@ -10,6 +10,7 @@ const navPhoneBtnLine2 = document.querySelector('.navbar__btn--line-2');
 const navPhoneBtnCircles = document.querySelectorAll('.navbar__btn--circle');
 const navPhoneItemsBox = document.querySelectorAll('.navbar__item--phone-box');
 const navPhoneItems = document.querySelectorAll('.navbar__item--phone');
+const heroIcons = document.querySelector('.navbar--phone-icons');
 
 const navTl = gsap.timeline({ paused: true });
 
@@ -30,7 +31,8 @@ navBtnActiveTl
 
 navTl
   .set('.navbar--phone', { y: 0, opacity: 1 })
-  .from(navPhoneItemsBox, { yPercent: -100, stagger: 0.1, ease: 'power1.inOut' });
+  .from(navPhoneItemsBox, { yPercent: -100, stagger: 0.1, ease: 'power1.inOut' })
+  .from(heroIcons.children, { scale: 0, ease: 'back', stagger: 0.1 });
 
 navPhoneItems.forEach((navItem) => {
   navItem.addEventListener('click', (e) => {

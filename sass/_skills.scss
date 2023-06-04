@@ -1,8 +1,7 @@
 .skills {
   min-height: 100vh;
   &__heading {
-    margin-bottom: 4rem;
-    font-size: calc(2rem + 2vw);
+    @extend %section-heading;
   }
 
   &__box {

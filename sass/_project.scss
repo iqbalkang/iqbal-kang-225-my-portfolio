@@ -104,6 +104,24 @@
     font-family: $ff-secondary;
   }
 
+  &__github {
+    @include circle(3rem);
+    @include flex;
+    border: $border;
+    box-shadow: 0px 5px 10px rgba($text-color, 0.4);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0px 5px 10px rgba($text-color, 0.2);
+    }
+
+    &:hover i {
+      transform: scale(1.1);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
   &__intro-text {
     max-width: 70rem;
     margin-bottom: 2rem;

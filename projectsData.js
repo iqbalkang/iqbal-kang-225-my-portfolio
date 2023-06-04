@@ -3,7 +3,7 @@ export const projectsData = [
   {
     name: 'atw',
     tagLine: 'Social Recommendation Networking Platform',
-    image: './images/project-art/atw.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/atw_jotmjg.png',
     belongsTo: 'fullstack',
     featured: true,
     pageLink: '',
@@ -12,7 +12,7 @@ export const projectsData = [
   {
     name: 'movieous',
     tagLine: "Movie-Lover's Paradise of Information",
-    image: './images/project-art/movieous.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/movieous_xb61lb.png',
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
@@ -20,7 +20,7 @@ export const projectsData = [
   {
     name: 'synccart',
     tagLine: 'Vast, Online Marketplace Bonanza',
-    image: './images/project-art/synccart.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/synccart_qqd7ac.png',
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
@@ -28,7 +28,7 @@ export const projectsData = [
   {
     name: 'caluri',
     tagLine: 'Track Your Health Journey Delightfully',
-    image: './images/project-art/caluri.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/caluri_g7jeje.png',
     belongsTo: 'react',
     featured: true,
     ownPage: true,
@@ -36,7 +36,7 @@ export const projectsData = [
   {
     name: 'queezy',
     tagLine: 'Playful Education Adventure Awaits',
-    image: './images/project-art/queezy.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850262/queezy_dhrate.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -44,7 +44,7 @@ export const projectsData = [
   {
     name: 'luxurify',
     tagLine: 'Furnish Your Home smartly',
-    image: './images/project-art/luxurify.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/luxurify_jw8dfe.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -52,7 +52,7 @@ export const projectsData = [
   {
     name: 'spentt',
     tagLine: 'Money Matters Simplified',
-    image: './images/project-art/spentt.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/spentt_jquaq2.png',
     belongsTo: 'react',
     featured: true,
     ownPage: true,
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     name: 'tohdo',
     tagLine: 'Task Ahead, Just Do It',
-    image: './images/project-art/tohdo.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/tohdo_xj31cf.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -69,62 +69,62 @@ export const projectsData = [
   {
     name: 'jobopia',
     tagLine: 'Organize Your Job Hunt',
-    image: './images/project-art/jobopia.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/jobopia_jos4cx.png',
     belongsTo: 'fullstack',
   },
   {
     name: 'aquazilla',
     tagLine: 'Hydrate Your Well-Being',
-    image: './images/project-art/aquazilla.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/aquazilla_t2suqk.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-aquazilla.vercel.app/',
   },
   {
     name: 'cryptourist',
     tagLine: 'Invest in Your Future',
-    image: './images/project-art/cryptourist.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/cryptourist_jlyczn.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-cryptourist.vercel.app/',
   },
   {
     name: 'newsium',
     tagLine: 'Stay informed, stay current',
-    image: './images/project-art/newsium.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/newsium_uo0uoe.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-newsium24.vercel.app/',
   },
   {
     name: 'what the color',
     tagLine: 'Guess the Colors Mystery',
-    image: './images/project-art/what-the-color.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/what-the-color_iwkvet.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
   },
   {
     name: 'todo',
     tagLine: 'Get Organized with Ease',
-    image: './images/project-art/todo.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/todo_cy9mro.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
   },
   {
     name: 'etch-a-sketch',
     tagLine: 'Color to Create Happiness',
-    image: './images/project-art/etch-a-sketch.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/etch-a-sketch_ik7xla.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-etch-a-sketch.vercel.app/',
   },
   {
     name: 'calculator',
     tagLine: 'Explore Beyond Numbers',
-    image: './images/project-art/calculator.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/calculator_tq8ed1.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-calculator.vercel.app/',
   },
   {
     name: 'dice-game',
     tagLine: 'Roll the Fun Dice',
-    image: './images/project-art/dice-game.png',
+    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/dice-game_zc9vqd.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-dice-game.vercel.app/',
   },
@@ -143,7 +143,12 @@ export const singleProjectsData = [
     video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
     liveSite: '',
     colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
-    fonts: [{ name: 'Josefin Sans', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'Josefin Sans',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -258,7 +263,12 @@ export const singleProjectsData = [
       '#ef4444',
       '#5ec268',
     ],
-    fonts: [{ name: 'roboto', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'roboto',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -358,7 +368,12 @@ export const singleProjectsData = [
     video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
     liveSite: '',
     colors: ['#ffffff', '#000000', '#bfdbfe', '#ef4444', '#7f7f7f', '#ebb305'],
-    fonts: [{ name: 'roboto', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'roboto',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -456,7 +471,12 @@ export const singleProjectsData = [
       '#662e9a',
       '#d40c7b',
     ],
-    fonts: [{ name: 'poppins', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'poppins',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -514,7 +534,12 @@ export const singleProjectsData = [
     video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738330/spenttvideo_2_mqyda2.mp4',
     liveSite: '',
     colors: ['#ecdcfa', '#271d30', '#88838e', '#ffffff', '#faff7f', '#c617d6', '#1626b5'],
-    fonts: [{ name: 'poppins', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'poppins',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -577,7 +602,12 @@ export const singleProjectsData = [
     video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685737797/queezyvideo2_zoy575.mp4',
     liveSite: '',
     colors: ['#fd0200', '#f3a13c', '#0542b8', '#136a04', '#000000', '#ffffff'],
-    fonts: [{ name: 'montserrat', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'montserrat',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -647,7 +677,12 @@ export const singleProjectsData = [
     video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738702/tohdovideo2_yoxmst.mp4',
     liveSite: '',
     colors: ['#330033', '#ffffff', '#000000', '#bc1119', '#a3892e', '#678c2a'],
-    fonts: [{ name: 'poppins', image: './images/montserratfont.png' }],
+    fonts: [
+      {
+        name: 'poppins',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+    ],
     stack: [
       {
         type: 'front end',
@@ -709,8 +744,14 @@ export const singleProjectsData = [
     liveSite: '',
     colors: ['#feeab9', '#700000', '#ffffff', '#da0612', '#5f4201'],
     fonts: [
-      { name: 'poppins', image: './images/montserratfont.png' },
-      { name: 'Cinzel Decorative', image: './images/montserratfont.png' },
+      {
+        name: 'poppins',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
+      {
+        name: 'Cinzel Decorative',
+        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+      },
     ],
     stack: [
       {

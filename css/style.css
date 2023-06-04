@@ -1041,6 +1041,23 @@ section {
   .project__intro-heading {
     font-size: calc(2rem + 2vw);
     font-family: "Bebas Neue", sans-serif; }
+  .project__github {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #777777;
+    box-shadow: 0px 5px 10px rgba(119, 119, 119, 0.4);
+    transition: all 0.2s ease-in-out; }
+    .project__github:hover {
+      transform: scale(0.9);
+      box-shadow: 0px 5px 10px rgba(119, 119, 119, 0.2); }
+    .project__github:hover i {
+      transform: scale(1.1);
+      transition: all 0.2s ease-in-out; }
   .project__intro-text {
     max-width: 70rem;
     margin-bottom: 2rem; }

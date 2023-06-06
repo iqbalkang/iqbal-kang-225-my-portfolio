@@ -1,6 +1,6 @@
 import './navbar.js';
 import './next.js';
-
+import { getTheme } from './theme.js';
 // import { gsap } from '/node_modules/gsap/index.js';
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
@@ -187,9 +187,6 @@ const renderFonts = () => {
 const renderStack = () => {
   project.stack.map((s) => generateStack(s));
 
-  console.log(document.querySelectorAll('.project__tool'));
-  console.log(projectToolsBox);
-
   ScrollTrigger.create({
     trigger: '.project__tools-box',
     // markers: true,
@@ -224,6 +221,7 @@ const renderProjectDescription = () => {
 const capitalizeText = (text) => text.slice(0, 1).toUpperCase() + text.slice(1);
 
 const loadProject = () => {
+  getTheme();
   document.title = 'Iqbal kang - ' + capitalizeText(project.name);
   renderVideo();
   renderColors();
@@ -291,6 +289,31 @@ ScrollTrigger.create({
   animation: projectIntroScrollTl,
   scrub: 1,
 });
+
+const animateLogo = () => {
+  const tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+  tl.to('.loader__logo', { rotate: 360, ease: 'power2.inOut' });
+};
+
+const animateEnter = () => {
+  const tl = gsap.timeline();
+
+  tl.to('.loader__logo', { yPercent: 200, duration: 2, ease: 'power4.inOut' })
+    .to('.loader__top', { yPercent: -100, duration: 1.5, ease: 'power4.inOut' }, '<+0.3')
+    .to(
+      '.loader__bottom',
+      {
+        yPercent: 100,
+        duration: 1.5,
+        ease: 'power4.inOut',
+      },
+      '<'
+    );
+};
+
+window.addEventListener('DOMContentLoaded', animateLogo);
+window.addEventListener('load', animateEnter);
 
 // projectFeatures.forEach((feature, index) => {
 //   let tl = gsap.timeline();

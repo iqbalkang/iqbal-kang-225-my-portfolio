@@ -5,8 +5,8 @@
     font-family: $ff-secondary;
   }
   &__btn {
-    background-color: $accent-color;
-    color: $background-color-dark;
+    background-color: var(--accent-color);
+    color: var(--background-color-dark);
 
     text-transform: capitalize;
     padding: 1.2rem 2rem;
@@ -33,7 +33,7 @@
     //   content: '';
     //   height: 100%;
     //   width: 50%;
-    //   background: $accent-color;
+    //   background: var(--accent-color);
     //   position: absolute;
     //   top: 0;
     //   left: -2px;
@@ -46,7 +46,7 @@
     //   content: '';
     //   height: 100%;
     //   width: 50%;
-    //   background: $background-color-light;
+    //   background: var(--background-color-light);
     //   position: absolute;
     //   top: 5px;
     //   left: 50%;
@@ -73,7 +73,7 @@
     // width: 100vw;
     border-radius: 50%;
     overflow: hidden;
-    background-color: $background-color-light;
+    background-color: var(--background-color-light);
     // height: 40rem;
     // width: 40rem;
     @include flex;

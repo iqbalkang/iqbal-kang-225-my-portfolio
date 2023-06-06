@@ -2,6 +2,7 @@
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
+import { setTheme, getTheme } from './theme.js';
 
 const navToggleBtn = document.querySelector('.navbar__toggle-btn');
 const navPhone = document.querySelector('.navbar--phone');
@@ -11,6 +12,8 @@ const navPhoneBtnCircles = document.querySelectorAll('.navbar__btn--circle');
 const navPhoneItemsBox = document.querySelectorAll('.navbar__item--phone-box');
 const navPhoneItems = document.querySelectorAll('.navbar__item--phone');
 const heroIcons = document.querySelector('.navbar--phone-icons');
+const themeIconBox = document.querySelector('.theme__icon-box');
+const themeIcons = document.querySelectorAll('.theme__icon');
 
 const navTl = gsap.timeline({ paused: true });
 
@@ -69,8 +72,19 @@ navToggleBtn.addEventListener('mousemove', (e) => {
 
   const position = navToggleBtn.getBoundingClientRect();
   const x = e.clientX - position.left - position.width / 8;
-  const y = e.clientY - position.top - position.height / 8;
+  // const y = e.clientY - position.top - position.height / 8;
 
   gsap.to('.navbar__btn--line', { x: -x * 0.4, ease: 'power(4)', duration: 2 });
   gsap.to('.navbar__btn--circle', { x: -x * 0.4, stagger: 0.2, ease: 'power(4)' });
+});
+
+themeIconBox.addEventListener('click', (e) => {
+  themeIcons.forEach((icon) => icon.classList.remove('active'));
+
+  document.body.classList.toggle('light__theme');
+
+  if (!document.body.classList.contains('light__theme')) setTheme('dark');
+  else setTheme('light');
+
+  getTheme();
 });

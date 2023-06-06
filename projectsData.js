@@ -481,7 +481,7 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
           { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
           {
             name: 'tailwind',
@@ -544,7 +544,7 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
           {
             name: 'javascript',
             image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',

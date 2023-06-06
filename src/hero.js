@@ -2,6 +2,7 @@
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(ScrollTrigger);
+import { getTheme } from './theme.js';
 
 // const line = document.querySelector('.hero__seperator');
 const container = document.querySelector('.container');
@@ -24,7 +25,7 @@ heroTextSvgs.forEach((svg) => {
 
 const animateSvg = () => {
   const tl = gsap.timeline();
-  tl.to(heroTextSvgs, { strokeDashoffset: 0, duration: 2, stagger: 0.2, delay: -2.5, stroke: '#e9c46a' });
+  tl.to(heroTextSvgs, { strokeDashoffset: 0, duration: 2, stagger: 0.2, delay: -2.5 });
 };
 
 const createScroller = () => {
@@ -93,3 +94,7 @@ ScrollTrigger.matchMedia({
 //   start: 'top 90%',
 //   animation: gsap.to(line, { width: '100%' }),
 // });
+
+window.addEventListener('DOMContentLoaded', () => {
+  getTheme();
+});

@@ -19,11 +19,61 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <div class="loader__top"></div>
+      <div class="loader__bottom"></div>
+
+      <svg
+        class="loader__logo"
+        width="708"
+        height="823"
+        viewBox="0 0 708 823"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="logo">
+          <path
+            id="k1"
+            d="M427.533 419.985L375.373 359.275C392.76 338.183 430.953 292.408 444.634 278.042C458.315 263.677 467.436 239.564 470.286 229.303H590.852L427.533 419.985Z"
+            fill="#777777"
+          />
+          <path
+            id="k2"
+            d="M348.869 486.676V365.255L589.146 643.155C562.068 643.725 500.047 644.523 468.58 643.155C465.16 624.001 450.053 603.252 442.928 595.271L348.869 486.676Z"
+            fill="#777777"
+          />
+          <path
+            id="i"
+            d="M234.291 279.755C237.711 250.682 249.112 233.581 253.103 228.45H119.711C123.701 233.581 135.102 250.682 138.522 279.755C139.206 309.17 138.807 502.36 138.522 595.278C138.522 602.974 132.024 624.864 119.711 644.017H186.407H253.103C240.789 624.864 234.291 602.974 234.291 595.278C234.006 502.36 233.607 309.17 234.291 279.755Z"
+            fill="#777777"
+          />
+          <path
+            id="right"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M342.502 92.498C417.828 88.1937 492.282 110.524 552.942 155.623C613.713 200.804 656.79 265.975 674.671 339.786C692.552 413.596 684.105 491.372 650.8 559.569C617.496 627.765 561.444 682.063 492.405 713.006L502.247 735.182C502.247 735.182 502.247 735.182 502.248 735.181C506.82 733.132 511.339 730.987 515.803 728.75C583.782 694.675 638.901 639.048 672.492 570.266C708.288 496.968 717.367 413.374 698.148 334.042C678.929 254.71 632.63 184.664 567.313 136.103C506.024 90.5368 431.634 66.5953 355.68 67.7313C350.818 67.804 345.951 67.9795 341.08 68.2585C340.949 68.2661 340.818 68.2737 340.686 68.2814L342.089 92.522C342.227 92.5139 342.365 92.5059 342.502 92.498Z"
+            fill="#777777"
+          />
+          <path
+            id="left"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M207.24 129.142C144.307 159.539 92.8709 209.611 60.638 271.855C28.405 334.1 17.1116 405.165 28.4498 474.402C39.7881 543.639 73.1474 607.32 123.529 655.902C173.911 704.484 238.602 735.351 307.909 743.878L304.973 767.98C300 767.368 295.05 766.65 290.125 765.825C221.267 754.301 157.336 722.153 106.8 673.422C52.6493 621.206 16.7944 552.762 4.60795 478.345C-7.57847 403.929 4.55981 327.547 39.204 260.646C71.5375 198.207 121.85 147.165 183.406 114.074C187.805 111.709 192.262 109.436 196.773 107.257L207.24 129.141L207.24 129.142Z"
+            fill="#777777"
+          />
+          <path
+            id="axis"
+            d="M295.856 739.783V0.99707L354.001 67.693V89.925H342.03V822.725L290.725 762.015L285.595 760.305V739.783H295.856Z"
+            fill="#777777"
+          />
+        </g>
+      </svg>
+    </div>
     <!-- NAVBAR LEFT SIDE -->
     <nav class="nav nav--project">
       <ul class="navbar navbar--desktop">
         <li class="navbar__item">
-          <a href="index.html" class="navbar__link">
+          <a href="index.html#" class="">
             <svg
               class="navbar__logo"
               width="1143"
@@ -80,12 +130,12 @@
           ><a href="index.html#work" class="navbar__link navbar__link--2">work</a>
         </li>
         <li class="navbar__item">
-          <a href="index.html#resume" class="navbar__link navbar__link--1">resume</a
-          ><a href="index.html#resume" class="navbar__link navbar__link--2">resume</a>
-        </li>
-        <li class="navbar__item">
           <a href="index.html#contact" class="navbar__link navbar__link--1">contact</a
           ><a href="index.html#contact" class="navbar__link navbar__link--2">contact</a>
+        </li>
+        <li class="navbar__item theme__icon-box">
+          <i class="ri-sun-fill theme__icon theme__dark"></i>
+          <i class="ri-sun-line theme__icon theme__light"></i>
         </li>
       </ul>
 
@@ -160,7 +210,7 @@
     <main class="container container--project project">
       <section class="project__hero">
         <div class="section-center">
-          <h2 class="project__heading">around the world</h2>
+          <h2 class="project__heading"></h2>
 
           <div class="project__macbook-box">
             <img
@@ -192,7 +242,8 @@
             <div class="project__intro-heading-box">
               <h3 class="project__intro-heading">the project</h3>
               <a target="_blank" href="https://github.com/iqbalkang225" class="project__github">
-                <i class="ri-github-line project__link"></i>
+                <!-- <i class="ri-github-line project__link"></i> -->
+                View Code
               </a>
             </div>
             <div class="project__intro-text-box"></div>

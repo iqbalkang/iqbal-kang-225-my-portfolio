@@ -663,6 +663,9 @@ section {
 
 .skills {
   min-height: 100vh; }
+  @media screen and (max-width: 768px) {
+    .skills {
+      min-height: auto; } }
   .skills__box {
     width: 100%;
     display: flex;
@@ -937,8 +940,6 @@ section {
   background-color: var(--background-color-light); }
 
 .about {
-  height: auto;
-  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   padding: 4rem 0 0; }
   .about__heading-box {
@@ -964,11 +965,16 @@ section {
     align-items: stretch;
     gap: 2rem; }
   .about__btn {
-    display: inline-block; }
+    display: inline-block;
+    padding: 1.5rem 0; }
   .about__box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
     place-items: center; }
+    @media screen and (min-width: 876px) {
+      .about__box {
+        grid-template-columns: 1fr 1fr; } }
   .about__text-box {
     position: relative; }
     .about__text-box p {

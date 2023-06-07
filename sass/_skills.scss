@@ -4,6 +4,10 @@
     @extend %section-heading;
   }
 
+  @include respond(768px) {
+    min-height: auto;
+  }
+
   &__box {
     width: 100%;
     display: flex;

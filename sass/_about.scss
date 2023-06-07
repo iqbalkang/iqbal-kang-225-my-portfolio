@@ -1,6 +1,6 @@
 .about {
-  height: auto;
-  min-height: 100vh;
+  // height: auto;
+  // min-height: 100vh;
   font-family: $ff-primary;
   padding: 4rem 0 0;
 
@@ -34,12 +34,18 @@
   &__btn {
     display: inline-block;
     @extend %cta-btns;
+    padding: 1.5rem 0;
   }
 
   &__box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
     place-items: center;
+
+    @include big-screen(876px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__text-box {
     position: relative;

@@ -234,6 +234,17 @@ const renderProjectDescription = () => {
   project.description.map((desc) => generateProjectDescription(desc));
 };
 
+const changeVideoPlaybackSpeed = () => {
+  const video = document.querySelector('video');
+
+  video.playbackRate = 2.0;
+  video.pause();
+
+  setTimeout(() => {
+    video.play();
+  }, 2000);
+};
+
 const capitalizeText = (text) => text.slice(0, 1).toUpperCase() + text.slice(1);
 
 const loadProject = () => {
@@ -241,6 +252,7 @@ const loadProject = () => {
   document.title = 'Iqbal kang - ' + capitalizeText(project.name);
   generateBtnLinks();
   renderVideo();
+  // changeVideoPlaybackSpeed();
   renderColors();
   renderFonts();
   renderStack();
@@ -309,6 +321,8 @@ const animateLogo = () => {
 
 const animateEnter = () => {
   const tl = gsap.timeline();
+
+  changeVideoPlaybackSpeed();
 
   logoRotationTl.pause();
 

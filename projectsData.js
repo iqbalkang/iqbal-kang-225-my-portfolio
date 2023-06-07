@@ -158,7 +158,7 @@ export const singleProjectsData = [
       'You can add posts to your favorites to build your very own gallery of favorite spots. You can comment, reply, and give thumbs up or react to reviews and posts. ATW sends live notifications for all of these events, so you stay updated and never miss out!',
       " Our easy-to-use interface allows you to easily log in and start engaging with the world around you. So get ready to explore! And don't forget to follow your friends and make new ones here at ATW. Join today and become part of the ATW revolution!",
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686090919/atwvideoblurred_ac3hqi.mov',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686174794/atwvideo2_1_hxfwrd.mp4',
     liveSite: '',
     colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
     fonts: [
@@ -269,7 +269,7 @@ export const singleProjectsData = [
       "We feature the most comprehensive and up-to-date database of filmographies spanning classic Hollywood to today's biggest blockbusters from around the globe. With user ratings, reviews and now showing and coming soon information, this is the perfect place for you to find out all you need to know about movies. With detailed reviews from savvy movie lovers like yourself, you'll never miss another gem or a forgettable flop.",
       'So explore your passion for cinema and browse our library right away!',
     ],
-    video: './images/movieous/movieousvideo.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686180042/movieousvideo2_puaaup.mov',
     liveSite: '',
     colors: [
       '#0e1428',

@@ -18,13 +18,6 @@ const filterProjects = (type) => {
   return projectsData.filter((project) => project.belongsTo === type);
 };
 
-// const renderProjectHTML = (project) => {
-//   return ` <a href="project.html?project=${project.name}" class="work__project">
-//              <span class="work__line"></span> <span class="work__project-name">${project.name}</span>
-//              <span class="work__project-info">${project.tagLine}</span>
-//            </a>`;
-// };
-
 const generateLink = (project) => {
   let link;
   if (!project.ownPage) link = project.liveLink;
@@ -74,18 +67,30 @@ const renderProjectsImages = (projects) => {
   projectImageBox.textContent = '';
 
   projects.forEach((project, index) => {
-    let imagesHTML = `<img src="${project.image}" alt="project-image" class="work__image ${
-      index === 0 && 'active'
-    }" />`;
+    const { image, stack } = project;
+    let imagesHTML = `
+                      <div class="work__image-stack ${index === 0 && 'active'}" />
+                        <img src="${image}" alt="project-image" class="work__image" />
+                        <div class="work__stack">
+                          <span>${stack[0]}</span>
+                          <span>${stack[1]}</span>
+                          <span>${stack[2]}</span>
+                        </div>
+                      </div>`;
+
+    // projects.forEach((project, index) => {
+    //   let imagesHTML = `<img src="${project.image}" alt="project-image" class="work__image ${
+    //     index === 0 && 'active'
+    //   }" />`;
 
     projectImageBox.insertAdjacentHTML('beforeend', imagesHTML);
   });
 };
 
 const displayProjectImage = (index, e) => {
-  const workImages = document.querySelectorAll('.work__image');
-  workImages.forEach((image) => image.classList.remove('active'));
-  workImages[index].classList.add('active');
+  const workImagesBoxes = document.querySelectorAll('.work__image-stack');
+  workImagesBoxes.forEach((image) => image.classList.remove('active'));
+  workImagesBoxes[index].classList.add('active');
 };
 
 let slideInTl;

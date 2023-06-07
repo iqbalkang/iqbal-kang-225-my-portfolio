@@ -1,5 +1,9 @@
 .project {
   font-family: $ff-primary;
+
+  .light__theme & {
+    color: var(--background-color-light);
+  }
   &__hero {
     text-align: center;
     position: relative;
@@ -10,6 +14,10 @@
     font-size: calc(4rem + 4vw);
     font-family: $ff-secondary;
     line-height: 1;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__macbook-box {
@@ -54,6 +62,10 @@
     top: 0;
     right: 10%;
     transform: translateY(-50%);
+
+    @include respond(576px) {
+      display: none;
+    }
   }
 
   &__btn-outline {
@@ -98,6 +110,10 @@
     @include flex;
     flex-direction: column-reverse;
     gap: 0.5rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__intro-heading {
@@ -107,7 +123,7 @@
     margin-bottom: 2rem;
   }
 
-  // &__github {
+  // &__button {
   //   @include circle(3rem);
   //   @include flex;
   //   border: $border;
@@ -125,7 +141,12 @@
   //   }
   // }
 
-  &__github {
+  &__btns-container {
+    @include flex;
+    gap: 1rem;
+  }
+
+  &__button {
     font-size: 1rem;
     font-weight: bold;
     border: $border;
@@ -157,6 +178,14 @@
     &:hover::after {
       width: 100%;
       opacity: 1;
+    }
+  }
+
+  &--live {
+    display: none;
+
+    @include respond(576px) {
+      display: block;
     }
   }
 
@@ -192,6 +221,10 @@
   &__typography-heading {
     margin-bottom: 2rem;
     font-size: 2rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__color-box {
@@ -247,6 +280,10 @@
   &__tools-heading {
     margin-bottom: 1rem;
     text-transform: capitalize;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__tool {
@@ -265,6 +302,10 @@
     padding: 0.4rem;
     border-radius: $border-radius-sm;
     box-shadow: 0px 5px 10px rgba(var(--text-color), 0.2);
+
+    .light__theme & {
+      border: 1px solid var(--background-color-light);
+    }
   }
 
   &__tool-image {
@@ -278,6 +319,10 @@
   &__features-heading {
     font-size: calc(2rem + 2vw);
     margin-bottom: 4rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__features {
@@ -288,23 +333,10 @@
   &__feature {
     position: relative;
     @include flex;
-
-    // &:nth-child(odd) {
-    //   .project__text {
-    //     left: -10%;
-    //   }
-    // }
-
-    // &:nth-child(even) {
-    //   .project__text {
-    //     right: -10%;
-    //   }
-    // }
   }
 
   &__text {
     position: absolute;
-    // font-size: calc(2rem + 10vw);
     font-size: calc(2rem + 5vw);
     font-family: $ff-secondary;
     top: 50%;
@@ -413,11 +445,11 @@
     }
 
     &-all {
-      @extend %nextBtns;
+      @extend %cta-btns;
     }
 
     &-next {
-      @extend %nextBtns;
+      @extend %cta-btns;
     }
 
     &-icons {
@@ -427,41 +459,6 @@
         align-items: start;
       }
     }
-  }
-}
-
-%nextBtns {
-  border: $border-white;
-  text-align: center;
-  width: 100%;
-  padding: 2rem 0;
-  border-radius: $border-radius;
-  color: var(--background-color-light);
-  position: relative;
-  overflow: hidden;
-
-  &:hover {
-    color: var(--background-color-dark);
-  }
-
-  &:hover::after {
-    width: 100%;
-    opacity: 1;
-  }
-
-  &::after {
-    content: '';
-    width: 70%;
-    height: 100%;
-    opacity: 0;
-    background-color: var(--background-color-light);
-    top: 0;
-    left: 50%;
-    z-index: -1;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    border-radius: $border-radius;
   }
 }
 
@@ -499,7 +496,7 @@
   background-color: var(--background-color-light);
 }
 
-.light__theme .project__github {
+.light__theme .project__button {
   &:hover {
     color: var(--background-color-dark);
   }
@@ -511,19 +508,25 @@
 
 .loader {
   position: fixed;
-  z-index: 100;
+  z-index: 10000;
   width: 100vw;
 
   &__top {
-    background-color: var(--background-color-dark);
     bottom: 49%;
     @extend %loader;
+
+    .light__theme & {
+      background-color: var(--background-color-light);
+    }
   }
 
   &__bottom {
-    background-color: var(--background-color-dark);
     top: 50%;
     @extend %loader;
+
+    .light__theme & {
+      background-color: var(--background-color-light);
+    }
   }
 
   &__logo {
@@ -532,19 +535,15 @@
     @include circle(10rem);
     right: 5rem;
     bottom: 5rem;
-    // opacity: 0;
-    // transform: rotate(-360deg);
 
     path {
       fill: var(--background-color-light);
+
+      .light__theme & {
+        fill: var(--background-color-dark);
+      }
     }
   }
-
-  // &--bottom {
-  //   path {
-  //     fill: var(--background-color-dark);
-  //   }
-  // }
 }
 
 %loader {
@@ -552,4 +551,5 @@
   width: 100vw;
   position: fixed;
   transform: skewY(-45deg);
+  background-color: var(--background-color-dark);
 }

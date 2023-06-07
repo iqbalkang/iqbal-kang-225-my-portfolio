@@ -33,7 +33,7 @@ navBtnActiveTl
   .to('.navbar__btn--line', { scale: 0.75, duration: 0.1 });
 
 navTl
-  .set('.navbar--phone', { y: 0, opacity: 1 })
+  .to('.navbar--phone', { y: 0, opacity: 1 })
   .from(navPhoneItemsBox, { yPercent: -100, stagger: 0.1, ease: 'power1.inOut' })
   .from(heroIcons.children, { scale: 0, ease: 'back', stagger: 0.1 });
 
@@ -53,8 +53,9 @@ navToggleBtn.addEventListener('click', () => {
     navBtnActiveTl.play();
     navTl.play();
   } else {
-    navBtnActiveTl.reverse();
     navTl.reverse();
+    navBtnActiveTl.reverse();
+    navBtnHoverTl.reverse();
   }
 });
 

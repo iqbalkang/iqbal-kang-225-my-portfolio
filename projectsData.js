@@ -8,6 +8,7 @@ export const projectsData = [
     featured: true,
     pageLink: '',
     ownPage: true,
+    stack: ['react', 'nodeJS', 'postgreSQL'],
   },
   {
     name: 'movieous',
@@ -16,6 +17,7 @@ export const projectsData = [
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
+    stack: ['react', 'nodeJS', 'mongoDB'],
   },
   {
     name: 'synccart',
@@ -24,6 +26,7 @@ export const projectsData = [
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
+    stack: ['react', 'nodeJS', 'mySQL'],
   },
   {
     name: 'caluri',
@@ -32,6 +35,7 @@ export const projectsData = [
     belongsTo: 'react',
     featured: true,
     ownPage: true,
+    stack: ['html', 'tailwind', 'react'],
   },
   {
     name: 'queezy',
@@ -40,6 +44,7 @@ export const projectsData = [
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
+    stack: ['html', 'scss', 'vanillaJS'],
   },
   {
     name: 'luxurify',
@@ -48,6 +53,7 @@ export const projectsData = [
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
+    stack: ['html', 'scss', 'vanillaJS'],
   },
   {
     name: 'spentt',
@@ -56,6 +62,7 @@ export const projectsData = [
     belongsTo: 'react',
     featured: true,
     ownPage: true,
+    stack: ['html', 'css', 'react'],
   },
   {
     name: 'tohdo',
@@ -64,6 +71,7 @@ export const projectsData = [
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
+    stack: ['html', 'css', 'vanillaJS'],
   },
   //
   {
@@ -71,6 +79,8 @@ export const projectsData = [
     tagLine: 'Organize Your Job Hunt',
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/jobopia_jos4cx.png',
     belongsTo: 'fullstack',
+    liveLink: 'http://54.193.69.1/',
+    stack: ['react', 'nodeJS', 'mongoDB'],
   },
   {
     name: 'aquazilla',
@@ -78,6 +88,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/aquazilla_t2suqk.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-aquazilla.vercel.app/',
+    stack: ['html', 'css', 'vanillaJS'],
   },
   {
     name: 'cryptourist',
@@ -85,6 +96,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/cryptourist_jlyczn.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-cryptourist.vercel.app/',
+    stack: ['html', 'css', 'react'],
   },
   {
     name: 'newsium',
@@ -92,6 +104,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/newsium_uo0uoe.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-newsium24.vercel.app/',
+    stack: ['html', 'css', 'react'],
   },
   {
     name: 'what the color',
@@ -99,6 +112,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/what-the-color_iwkvet.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
+    stack: ['html', 'tailwind', 'react'],
   },
   {
     name: 'todo',
@@ -106,6 +120,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/todo_cy9mro.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
+    stack: ['html', 'css', 'react'],
   },
   {
     name: 'etch-a-sketch',
@@ -113,6 +128,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/etch-a-sketch_ik7xla.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-etch-a-sketch.vercel.app/',
+    stack: ['html', 'css', 'vanillaJS'],
   },
   {
     name: 'calculator',
@@ -120,6 +136,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/calculator_tq8ed1.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-calculator.vercel.app/',
+    stack: ['html', 'css', 'vanillaJS'],
   },
   {
     name: 'dice-game',
@@ -127,6 +144,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/dice-game_zc9vqd.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-dice-game.vercel.app/',
+    stack: ['html', 'css', 'vanillaJS'],
   },
 ];
 
@@ -140,7 +158,7 @@ export const singleProjectsData = [
       'You can add posts to your favorites to build your very own gallery of favorite spots. You can comment, reply, and give thumbs up or react to reviews and posts. ATW sends live notifications for all of these events, so you stay updated and never miss out!',
       " Our easy-to-use interface allows you to easily log in and start engaging with the world around you. So get ready to explore! And don't forget to follow your friends and make new ones here at ATW. Join today and become part of the ATW revolution!",
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
+    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686090919/atwvideoblurred_ac3hqi.mov',
     liveSite: '',
     colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
     fonts: [
@@ -239,6 +257,8 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
+    liveLink: 'http://atw.wiki/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-around-the-world',
   },
 
   // movieous
@@ -354,6 +374,8 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
+    liveLink: 'http://movieous.wiki/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous-server',
   },
 
   // synccart
@@ -445,6 +467,8 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
+    liveLink: 'http://54.215.53.218/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-synccart',
   },
 
   // caluri
@@ -481,7 +505,7 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
           { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
           {
             name: 'tailwind',
@@ -519,6 +543,8 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/updateinfo_fjm7tr.png',
       },
     ],
+    liveLink: 'https://iqbal-kang-225-caluri.vercel.app/info',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-caluri',
   },
 
   // spentt
@@ -544,7 +570,7 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: '/images/redux.png' },
+          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
           {
             name: 'javascript',
             image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
@@ -589,6 +615,8 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/crunchinglossdata_qfypvi.png',
       },
     ],
+    liveLink: 'https://iqbal-kang-225-spentt.vercel.app/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-spentt',
   },
 
   // queezy
@@ -662,6 +690,8 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/dynamicleaderboard_sgsnlj.png',
       },
     ],
+    liveLink: 'https://iqbal-kang-225-qeezy.vercel.app/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-qeezy',
   },
 
   // tohdo
@@ -729,6 +759,8 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743097/crossgroupvisibility_exd9nu.png',
       },
     ],
+    liveLink: 'https://iqbal-kang-225-tohdo.vercel.app/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-tohdo',
   },
 
   //luxurify
@@ -791,5 +823,7 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742859/showcaseselection_rcbq27.png',
       },
     ],
+    liveLink: 'https://iqbal-kang-225-luxurify.vercel.app/',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-luxurify',
   },
 ];

@@ -76,6 +76,13 @@
     border-bottom: $border;
     @include flex;
 
+    .light__theme & {
+      border-top: 1px solid var(--background-color-light);
+      border-right: 1px solid var(--background-color-light);
+      border-bottom: 1px solid var(--background-color-light);
+      color: var(--background-color-light);
+    }
+
     @include respond(1170px) {
       padding: 1.2rem 1rem; //change back to 0 if it glitches
     }

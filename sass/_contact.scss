@@ -28,7 +28,7 @@
   &__heading {
     font-size: calc(3rem + 8vw);
     letter-spacing: 2px;
-    color: $background-color-light;
+    color: var(--background-color-light);
   }
 
   &__upper {
@@ -41,7 +41,7 @@
   &__lower {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color: $background-color-light;
+    color: var(--background-color-light);
 
     @include respond(970px) {
       grid-template-columns: 1fr 1fr;
@@ -71,7 +71,7 @@
 
   &__text-bold {
     font-size: 6rem;
-    color: $accent-color;
+    color: var(--accent-color);
     pointer-events: none;
   }
 
@@ -124,12 +124,12 @@
     }
 
     &:hover {
-      color: $background-color-dark;
-      background-color: $background-color-light;
+      color: var(--background-color-dark);
+      background-color: var(--background-color-light);
     }
 
     &:hover .contact__text-bold {
-      color: $background-color-dark;
+      color: var(--background-color-dark);
     }
 
     &:hover i {
@@ -145,7 +145,7 @@
     top: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     z-index: 10;
     font-size: 0.75rem;
     @include flex;
@@ -165,7 +165,7 @@
     opacity: 1;
     position: absolute;
     top: -2.5rem;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     padding: 0.5rem 1rem;
     border-radius: $border-radius;
     transition: all 0.2s ease-in-out;
@@ -179,7 +179,7 @@
 
     &::after {
       content: '';
-      background-color: $accent-color;
+      background-color: var(--accent-color);
       width: 0.6rem;
       height: 0.4rem;
       position: absolute;
@@ -209,7 +209,7 @@
     }
 
     path {
-      fill: $background-color-light;
+      fill: var(--background-color-light);
     }
   }
 
@@ -218,7 +218,7 @@
     padding: 1rem 0;
     @include flex;
     gap: 2rem;
-    color: $background-color-light;
+    color: var(--background-color-light);
     letter-spacing: 2px;
     font-family: $ff-primary;
     font-size: 1.2rem;
@@ -228,6 +228,6 @@
   &__seperator {
     height: 0.15rem;
     width: 2rem;
-    background-color: $background-color-light;
+    background-color: var(--background-color-light);
   }
 }

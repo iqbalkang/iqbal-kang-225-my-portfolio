@@ -1,5 +1,9 @@
 .project {
   font-family: $ff-primary;
+
+  .light__theme & {
+    color: var(--background-color-light);
+  }
   &__hero {
     text-align: center;
     position: relative;
@@ -10,6 +14,10 @@
     font-size: calc(4rem + 4vw);
     font-family: $ff-secondary;
     line-height: 1;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__macbook-box {
@@ -54,20 +62,24 @@
     top: 0;
     right: 10%;
     transform: translateY(-50%);
+
+    @include respond(576px) {
+      display: none;
+    }
   }
 
   &__btn-outline {
-    border: 1px dashed $text-color;
+    border: 1px dashed var(--text-color);
     border-radius: 50%;
     padding: 2rem;
     cursor: pointer;
   }
 
   &__btn-link {
-    color: $background-color-light;
+    color: var(--background-color-light);
     @include flex;
     @include circle(calc(5rem + 5vw));
-    background: $background-color-dark;
+    background: var(--background-color-dark);
     font-size: 1rem;
   }
 
@@ -77,7 +89,7 @@
     position: absolute;
     top: 0;
     transform: translateY(-100%);
-    color: $background-color-dark;
+    color: var(--background-color-dark);
 
     @include respond(976px) {
       @include flex(column);
@@ -86,7 +98,7 @@
   }
 
   &__intro {
-    background: #d7d5cc;
+    background: var(--intro-color);
     position: relative;
   }
 
@@ -96,29 +108,84 @@
 
   &__intro-heading-box {
     @include flex;
-    gap: 2rem;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__intro-heading {
     font-size: calc(2rem + 2vw);
     font-family: $ff-secondary;
+    line-height: 1;
+    margin-bottom: 2rem;
   }
 
-  &__github {
-    @include circle(3rem);
-    @include flex;
-    border: $border;
-    box-shadow: 0px 5px 10px rgba($text-color, 0.4);
-    transition: all 0.2s ease-in-out;
+  // &__button {
+  //   @include circle(3rem);
+  //   @include flex;
+  //   border: $border;
+  //   box-shadow: 0px 5px 10px rgba(var(--text-color), 0.4);
+  //   transition: all 0.2s ease-in-out;
 
-    &:hover {
-      transform: scale(0.9);
-      box-shadow: 0px 5px 10px rgba($text-color, 0.2);
+  //   &:hover {
+  //     transform: scale(0.9);
+  //     box-shadow: 0px 5px 10px rgba(var(--text-color), 0.2);
+  //   }
+
+  //   &:hover i {
+  //     transform: scale(1.1);
+  //     transition: all 0.2s ease-in-out;
+  //   }
+  // }
+
+  &__btns-container {
+    @include flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    font-size: 1rem;
+    font-weight: bold;
+    border: $border;
+    padding: 0.2rem 1rem;
+    border-radius: $border-radius;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 60%;
+      height: 100%;
+      transform: translateX(-50%);
+      background-color: var(--background-color-dark);
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      z-index: -1;
+      border-radius: $border-radius;
     }
 
-    &:hover i {
-      transform: scale(1.1);
-      transition: all 0.2s ease-in-out;
+    &:hover {
+      color: var(--background-color-light);
+    }
+
+    &:hover::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  &--live {
+    display: none;
+
+    @include respond(576px) {
+      display: block;
     }
   }
 
@@ -154,6 +221,10 @@
   &__typography-heading {
     margin-bottom: 2rem;
     font-size: 2rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__color-box {
@@ -164,7 +235,8 @@
 
   &__color {
     @include circle(10rem);
-    box-shadow: 0 4px 5px rgba($background-color-dark, 0.4);
+    // box-shadow: 0 4px 5px rgbvar(--($background-color-dark), 0.4);
+    box-shadow: 0 4px 5px rgba(var(--text-color), 0.4);
   }
 
   &__typography-box {
@@ -208,6 +280,10 @@
   &__tools-heading {
     margin-bottom: 1rem;
     text-transform: capitalize;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__tool {
@@ -225,7 +301,11 @@
     height: 6rem;
     padding: 0.4rem;
     border-radius: $border-radius-sm;
-    box-shadow: 0px 5px 10px rgba($text-color, 0.2);
+    box-shadow: 0px 5px 10px rgba(var(--text-color), 0.2);
+
+    .light__theme & {
+      border: 1px solid var(--background-color-light);
+    }
   }
 
   &__tool-image {
@@ -233,12 +313,16 @@
   }
 
   &__features-container {
-    background: radial-gradient(#eeeeee, #d7d5cc);
+    background: radial-gradient(var(--background-color-light), var(--intro-color));
   }
 
   &__features-heading {
     font-size: calc(2rem + 2vw);
     margin-bottom: 4rem;
+
+    .light__theme & {
+      color: var(--text-color);
+    }
   }
 
   &__features {
@@ -249,23 +333,10 @@
   &__feature {
     position: relative;
     @include flex;
-
-    // &:nth-child(odd) {
-    //   .project__text {
-    //     left: -10%;
-    //   }
-    // }
-
-    // &:nth-child(even) {
-    //   .project__text {
-    //     right: -10%;
-    //   }
-    // }
   }
 
   &__text {
     position: absolute;
-    // font-size: calc(2rem + 10vw);
     font-size: calc(2rem + 5vw);
     font-family: $ff-secondary;
     top: 50%;
@@ -273,12 +344,12 @@
     line-height: 0.8;
 
     &--1 {
-      color: $background-color-dark;
+      color: var(--background-color-dark);
       z-index: 1;
     }
     &--2 {
       -webkit-text-stroke-width: 0.2vw;
-      -webkit-text-stroke-color: $background-color-light;
+      -webkit-text-stroke-color: var(--background-color-light);
       color: transparent;
       z-index: 3;
     }
@@ -290,13 +361,13 @@
     width: 70%;
     border-radius: $border-radius-sm;
     overflow: hidden;
-    box-shadow: 0px 10px 10px rgba($background-color-dark, 0.2);
+    box-shadow: 0 10px 10px rgba(var(--ackground-color-dark), 0.2);
   }
 
   &__overlay {
     height: 100%;
     width: 100%;
-    background-color: $background-color-dark;
+    background-color: var(--background-color-dark);
     position: absolute;
     top: 0;
     left: 0;
@@ -304,7 +375,7 @@
   }
 
   &__next {
-    background: $background-color-dark;
+    background: var(--background-color-dark);
     border-left: $border;
     height: 100vh;
     position: relative;
@@ -344,13 +415,13 @@
       overflow: hidden;
 
       p {
-        color: $accent-color;
+        color: var(--accent-color);
       }
     }
 
     &-heading {
       font-size: calc(2rem + 5vw);
-      color: $background-color-light;
+      color: var(--background-color-light);
       line-height: 1;
       padding-bottom: 15rem;
       font-family: $ff-secondary;
@@ -374,11 +445,11 @@
     }
 
     &-all {
-      @extend %nextBtns;
+      @extend %cta-btns;
     }
 
     &-next {
-      @extend %nextBtns;
+      @extend %cta-btns;
     }
 
     &-icons {
@@ -391,37 +462,94 @@
   }
 }
 
-%nextBtns {
-  border: $border-white;
-  text-align: center;
-  width: 100%;
-  padding: 2rem 0;
-  border-radius: $border-radius;
-  color: $background-color-light;
-  position: relative;
-  overflow: hidden;
+.light__theme .project__btn-link {
+  background: var(--background-color-light);
 
+  span {
+    color: var(--background-color-dark);
+  }
+}
+
+.light__theme .project__intro {
+  background: var(--intro-color);
+}
+
+.light__theme .project__features-container {
+  background: radial-gradient(var(--background-color-dark), var(--intro-color));
+}
+
+.light__theme .project__details-box {
+  color: var(--background-color-light);
+}
+
+.light__theme .project__text {
+  &--1 {
+    color: var(--background-color-light);
+  }
+
+  &--2 {
+    -webkit-text-stroke-color: var(--background-color-dark);
+  }
+}
+
+.light__theme .project__overlay {
+  background-color: var(--background-color-light);
+}
+
+.light__theme .project__button {
   &:hover {
-    color: $background-color-dark;
+    color: var(--background-color-dark);
   }
 
   &:hover::after {
-    width: 100%;
-    opacity: 1;
+    background-color: var(--background-color-light);
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 10000;
+  width: 100vw;
+
+  &__top {
+    bottom: 49%;
+    @extend %loader;
+
+    .light__theme & {
+      background-color: var(--background-color-light);
+    }
   }
 
-  &::after {
-    content: '';
-    width: 70%;
-    height: 100%;
-    opacity: 0;
-    background-color: $background-color-light;
-    top: 0;
-    left: 50%;
-    z-index: -1;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    border-radius: $border-radius;
+  &__bottom {
+    top: 50%;
+    @extend %loader;
+
+    .light__theme & {
+      background-color: var(--background-color-light);
+    }
   }
+
+  &__logo {
+    position: fixed;
+    z-index: 200;
+    @include circle(10rem);
+    right: 5rem;
+    bottom: 5rem;
+
+    path {
+      fill: var(--background-color-light);
+
+      .light__theme & {
+        fill: var(--background-color-dark);
+      }
+    }
+  }
+}
+
+%loader {
+  height: 200vh;
+  width: 100vw;
+  position: fixed;
+  transform: skewY(-45deg);
+  background-color: var(--background-color-dark);
 }

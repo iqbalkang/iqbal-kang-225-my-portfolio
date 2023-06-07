@@ -1,6 +1,6 @@
 import './navbar.js';
 import './next.js';
-
+import { getTheme } from './theme.js';
 // import { gsap } from '/node_modules/gsap/index.js';
 // import { ScrollTrigger } from '/node_modules/gsap/ScrollTrigger.js';
 
@@ -11,6 +11,8 @@ const liveBtnContainer = document.querySelector('.project__btn-container');
 const liveBtn = document.querySelector('.project__btn-link');
 const liveBtnText = document.querySelector('.project__btn-link span');
 const liveBtnOutline = document.querySelector('.project__btn-outline');
+const projectLiveBtnSmall = document.querySelector('.project--live');
+const projectGithubBtn = document.querySelector('.project--github');
 
 const projectIntroSection = document.querySelector('.project__intro');
 
@@ -68,6 +70,14 @@ const generateProjectDescription = (description) => {
   descParagraph.textContent = description;
 
   projectIntroTextContainer.appendChild(descParagraph);
+};
+
+const generateBtnLinks = () => {
+  const { githubLink, liveLink } = project;
+
+  liveBtn.href = liveLink;
+  projectGithubBtn.href = githubLink;
+  projectLiveBtnSmall.href = liveLink;
 };
 
 const renderVideo = () => {
@@ -182,18 +192,21 @@ const renderColors = () => {
 
 const renderFonts = () => {
   project.fonts.map((font) => generateFont(font));
+
+  ScrollTrigger.create({
+    trigger: '.project__typography-wrapper',
+    start: 'top 90%',
+    animation: gsap.from('.project__typography-box', { xPercent: 10 }),
+    toggleActions: 'play none none reverse',
+  });
 };
 
 const renderStack = () => {
   project.stack.map((s) => generateStack(s));
 
-  console.log(document.querySelectorAll('.project__tool'));
-  console.log(projectToolsBox);
-
   ScrollTrigger.create({
     trigger: '.project__tools-box',
-    // markers: true,
-    start: 'top 80%',
+    start: 'top 100%',
     animation: gsap.from('.project__tool', { yPercent: 50, stagger: 0.05 }),
     toggleActions: 'play none none reverse',
   });
@@ -224,7 +237,9 @@ const renderProjectDescription = () => {
 const capitalizeText = (text) => text.slice(0, 1).toUpperCase() + text.slice(1);
 
 const loadProject = () => {
+  getTheme();
   document.title = 'Iqbal kang - ' + capitalizeText(project.name);
+  generateBtnLinks();
   renderVideo();
   renderColors();
   renderFonts();
@@ -271,10 +286,6 @@ liveBtnOutline.addEventListener('mousemove', (e) => {
 });
 
 liveBtnOutline.addEventListener('mouseleave', (e) => {
-  // const position = liveBtnOutline.getBoundingClientRect();
-  // const x = e.pageX - position.left - position.width / 2;
-  // const y = e.pageY - position.top - position.height / 2;
-
   gsap.to(liveBtn, { x: 0, y: 0, ease: 'elastic' });
   gsap.to(liveBtnText, { x: 0, y: 0, ease: 'elastic' });
 });
@@ -285,12 +296,40 @@ projectIntroScrollTl.from(liveBtnContainer, { yPercent: 10 });
 
 ScrollTrigger.create({
   trigger: projectIntroSection,
-  // markers: true,
   start: 'top 100%',
-  end: '+50px 80%',
+  end: '+200px 50%',
   animation: projectIntroScrollTl,
   scrub: 1,
 });
+
+const logoRotationTl = gsap.timeline({ repeat: -1, yoyo: true });
+const animateLogo = () => {
+  logoRotationTl.to('.loader__logo', { rotate: 360, ease: 'power2.inOut' });
+};
+
+const animateEnter = () => {
+  const tl = gsap.timeline();
+
+  logoRotationTl.pause();
+
+  tl.to('.loader__logo', { rotate: 0, ease: 'power2' })
+    .to('.loader__logo', { yPercent: 200, duration: 2, ease: 'power4.inOut' })
+    .to('.loader__top', { yPercent: -100, duration: 1.5, ease: 'power4.inOut' }, '<+0.3')
+    .to(
+      '.loader__bottom',
+      {
+        yPercent: 100,
+        duration: 1.5,
+        ease: 'power4.inOut',
+      },
+      '<'
+    )
+    .from('.project__hero', { scale: 1.2, duration: 1 }, '<+0.2')
+    .from('.project__heading', { y: '100px' }, '<+0.5');
+};
+
+window.addEventListener('DOMContentLoaded', animateLogo);
+window.addEventListener('load', animateEnter);
 
 // projectFeatures.forEach((feature, index) => {
 //   let tl = gsap.timeline();

@@ -53,8 +53,9 @@ const detectOS = () => {
   const memojiVideo = document.querySelector('.about__memoji-video');
 
   if (os !== 'macOS') {
-    memojiVideoContainer.style.backgroundColor = 'none';
-    memojiVideo.style.transform = 'scale(1.2)';
+    memojiVideoContainer.style.backgroundColor = '#111';
+    memojiVideoContainer.style.border = '1px solid #eeeeee';
+    memojiVideo.style.transform = 'scale(1.2) translayey(10px)';
   }
 };
 

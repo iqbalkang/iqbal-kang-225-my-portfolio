@@ -54,7 +54,7 @@ const detectOS = () => {
 
   if (os !== 'macOS') {
     memojiVideoContainer.style.backgroundColor = '#111';
-    memojiVideoContainer.style.border = '1px solid #eeeeee';
+    memojiVideoContainer.style.border = '3px solid #eeeeee';
     memojiVideo.style.transform = 'scale(1.2) translayey(10px)';
   }
 };

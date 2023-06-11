@@ -467,7 +467,7 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
-    liveLink: 'http://54.215.53.218/',
+    liveLink: 'http://synccart.wiki',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-synccart',
   },
 

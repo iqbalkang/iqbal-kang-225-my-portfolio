@@ -76,12 +76,12 @@
           ><a href="#about" class="navbar__link navbar__link--2">about</a>
         </li>
         <li class="navbar__item">
-          <a href="#skills" class="navbar__link navbar__link--1">skills</a
-          ><a href="#skills" class="navbar__link navbar__link--2">skills</a>
-        </li>
-        <li class="navbar__item">
           <a href="#work" class="navbar__link navbar__link--1">work</a
           ><a href="#work" class="navbar__link navbar__link--2">work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#skills" class="navbar__link navbar__link--1">skills</a
+          ><a href="#skills" class="navbar__link navbar__link--2">skills</a>
         </li>
         <li class="navbar__item">
           <a href="#contact" class="navbar__link navbar__link--1">contact</a
@@ -116,13 +116,13 @@
         <li class="navbar__item--phone navbar__item--phone--3">
           <div class="navbar__item--phone-box">
             <span>03</span>
-            <a href="#skills" class="navbar__link--phone">skills</a>
+            <a href="#work" class="navbar__link--phone">work</a>
           </div>
         </li>
         <li class="navbar__item--phone navbar__item--phone--4">
           <div class="navbar__item--phone-box">
             <span>04</span>
-            <a href="#work" class="navbar__link--phone">work</a>
+            <a href="#skills" class="navbar__link--phone">skills</a>
           </div>
         </li>
         <li class="navbar__item--phone navbar__item--phone--5">
@@ -496,7 +496,7 @@
                 <p class="timeline__text">Tyler technologies (intern)</p>
               </div>
               <div class="timeline__event timeline--salvation">
-                <p class="timeline__text">red salvation army (instructor)</p>
+                <p class="timeline__text">Salvation Army Red shield (instructor)</p>
               </div>
               <div class="timeline__event timeline--bvt">
                 <p class="timeline__text">Web development bootcamp</p>
@@ -517,7 +517,11 @@
           </div>
           <!-- 7 -->
           <div class="timeline__duration">
-            <div class="timeline--upper"></div>
+            <div class="timeline--upper">
+              <div class="timeline__event timeline--bvtintern">
+                <p class="timeline__text">Bay Valley Tech (intern)</p>
+              </div>
+            </div>
             <div class="timeline--lower">
               <p>jan</p>
               <p>2023</p>
@@ -527,9 +531,79 @@
           <div class="timeline__duration">
             <div class="timeline--upper"></div>
             <div class="timeline--lower">
+              <p>june</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
+              <p>july</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="timeline__duration">
+            <div class="timeline--upper"></div>
+            <div class="timeline--lower">
               <p>jan</p>
               <p>2024</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="work">
+        <div class="section-center">
+          <div class="work__box">
+            <div class="work__tabs-box">
+              <ul class="work__tabs">
+                <li class="work__tab"><button class="btn work__tab-btn active">featured</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">fullstack</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">react</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">vanilla js</button></li>
+                <li class="work__tab"><button class="btn work__tab-btn">all</button></li>
+              </ul>
+            </div>
+            <!-- will be dynamic -->
+            <div class="work__content active">
+              <!-- <div class="work__sort">
+                      <button class="btn work__sort-btn">Complexity <i class="ri-arrow-down-line"></i></button>
+                    </div> -->
+              <div class="work__projects"></div>
+              <div class="work__image-box">
+                <!-- <div class="work__image-stack active">
+                        <img src="./images/project-art/calculator.png" alt="" class="work__image" />
+                        <div class="work__stack">
+                          <span>react</span>
+                          <span>nodeJS</span>
+                          <span>postgreSQL</span>
+                        </div>
+                      </div>
+                      <div class="work__image-stack">
+                        <img src="./images/project-art/calculator.png" alt="" class="work__image" />
+                        <div class="work__stack">
+                          <span>react</span>
+                          <span>nodeJS</span>
+                          <span>postgreSQL</span>
+                        </div>
+                      </div>
+                      <div class="work__image-stack">
+                        <img src="./images/project-art/calculator.png" alt="" class="work__image" />
+                        <div class="work__stack">
+                          <span>react</span>
+                          <span>nodeJS</span>
+                          <span>postgreSQL</span>
+                        </div>
+                      </div> -->
+              </div>
+
+              <div class="work__projects-phone"></div>
+            </div>
+
+            <!-- upto here -->
           </div>
         </div>
       </section>
@@ -1124,60 +1198,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WORK -->
-      <section id="work" class="work">
-        <div class="section-center">
-          <div class="work__box">
-            <div class="work__tabs-box">
-              <ul class="work__tabs">
-                <li class="work__tab"><button class="btn work__tab-btn active">featured</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">fullstack</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">react</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">vanilla js</button></li>
-                <li class="work__tab"><button class="btn work__tab-btn">all</button></li>
-              </ul>
-            </div>
-            <!-- will be dynamic -->
-            <div class="work__content active">
-              <!-- <div class="work__sort">
-                <button class="btn work__sort-btn">Complexity <i class="ri-arrow-down-line"></i></button>
-              </div> -->
-              <div class="work__projects"></div>
-              <div class="work__image-box">
-                <!-- <div class="work__image-stack active">
-                  <img src="./images/project-art/calculator.png" alt="" class="work__image" />
-                  <div class="work__stack">
-                    <span>react</span>
-                    <span>nodeJS</span>
-                    <span>postgreSQL</span>
-                  </div>
-                </div>
-                <div class="work__image-stack">
-                  <img src="./images/project-art/calculator.png" alt="" class="work__image" />
-                  <div class="work__stack">
-                    <span>react</span>
-                    <span>nodeJS</span>
-                    <span>postgreSQL</span>
-                  </div>
-                </div>
-                <div class="work__image-stack">
-                  <img src="./images/project-art/calculator.png" alt="" class="work__image" />
-                  <div class="work__stack">
-                    <span>react</span>
-                    <span>nodeJS</span>
-                    <span>postgreSQL</span>
-                  </div>
-                </div> -->
-              </div>
-
-              <div class="work__projects-phone"></div>
-            </div>
-
-            <!-- upto here -->
           </div>
         </div>
       </section>

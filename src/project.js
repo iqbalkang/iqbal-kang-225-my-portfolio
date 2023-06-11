@@ -132,7 +132,7 @@ const renderLoginDetailsHTML = (details) => {
   return ` <div class="project__details-box">
             <h5 class="project__details-heading">Login Details</h5>
             <h6 class="project__details-text">Email: ${email}</h6>
-            <h6 class="project__details-text">Passowrd: ${password} </h6>
+            <h6 class="project__details-text">Password: ${password} </h6>
           </div>`;
 };
 

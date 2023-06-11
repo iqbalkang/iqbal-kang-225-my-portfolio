@@ -25,7 +25,7 @@ contactEmail.addEventListener('mouseleave', (e) => {
 });
 
 contactEmail.addEventListener('click', (e) => {
-  navigator.clipboard.writeText('iqbalkang18@gmail.com');
+  navigator.clipboard.writeText('iqbal.kang.cohort225@gmail.com');
   contactCopied.classList.add('active');
 
   setTimeout(() => {

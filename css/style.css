@@ -543,7 +543,7 @@ section {
         display: block;
         height: 40vw;
         min-height: 450px;
-        overflow-y: scroll; } }
+        overflow-y: auto; } }
   .work__project {
     padding: 1rem 2rem;
     display: flex;
@@ -1074,7 +1074,7 @@ section {
     background-color: #ea526f;
     bottom: 11vw;
     left: 70%;
-    width: 130%; }
+    width: 140%; }
   .timeline--salvation {
     background-color: #00916e;
     bottom: 6vw;
@@ -1084,6 +1084,10 @@ section {
     background-color: #835bf1;
     left: 10%;
     width: 210%; }
+  .timeline--bvtintern {
+    background-color: #05668d;
+    left: 30%;
+    width: 200%; }
 
 .light__theme .timeline__text {
   color: var(--background-color-dark); }

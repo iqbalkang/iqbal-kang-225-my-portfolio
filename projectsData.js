@@ -373,9 +373,9 @@ export const singleProjectsData = [
         image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/insightsbeforesubmit_zjhqsq.png',
       },
     ],
-    loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
+    loginDetails: { email: 'iqbalkang18@gmail.com', password: 'Welcome2dsite' },
     liveLink: 'http://movieous.wiki/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous-server',
+    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous',
   },
 
   // synccart

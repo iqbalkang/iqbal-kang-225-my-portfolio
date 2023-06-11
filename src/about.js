@@ -5,9 +5,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const aboutSection = document.querySelector('.about');
-// const aboutBtn = document.querySelector('.about__btn');
-// const btnImg = document.querySelector('.about__btn img');
-
 const aboutBtns = document.querySelector('.about__btns-box');
 const aboutText = document.querySelectorAll('.about__text p');
 
@@ -49,3 +46,16 @@ ScrollTrigger.create({
 });
 
 headingAnimation();
+
+const detectOS = () => {
+  const os = window.navigator.userAgentData.platform;
+  const memojiVideoContainer = document.querySelector('.about__memoji');
+  const memojiVideo = document.querySelector('.about__memoji-video');
+
+  if (os !== 'macOS') {
+    memojiVideoContainer.style.backgroundColor = 'none';
+    memojiVideo.style.transform = 'scale(1.2)';
+  }
+};
+
+detectOS();

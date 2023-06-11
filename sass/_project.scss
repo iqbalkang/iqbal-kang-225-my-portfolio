@@ -80,7 +80,8 @@
     @include flex;
     @include circle(calc(5rem + 5vw));
     background: var(--background-color-dark);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
 
   &__details-box {

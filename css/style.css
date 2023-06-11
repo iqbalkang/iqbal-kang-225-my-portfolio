@@ -1158,7 +1158,8 @@ section {
     width: calc(5rem + 5vw);
     border-radius: 50%;
     background: var(--background-color-dark);
-    font-size: 1rem; }
+    font-size: 1.2rem;
+    text-align: center; }
   .project__details-box {
     display: flex;
     justify-content: center;

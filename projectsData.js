@@ -3,7 +3,7 @@ export const projectsData = [
   {
     name: 'atw',
     tagLine: 'Social Recommendation Networking Platform',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/atw_jotmjg.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/atw.png',
     belongsTo: 'fullstack',
     featured: true,
     pageLink: '',
@@ -13,7 +13,7 @@ export const projectsData = [
   {
     name: 'movieous',
     tagLine: "Movie-Lover's Paradise of Information",
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/movieous_xb61lb.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/movieous.png',
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
@@ -22,7 +22,7 @@ export const projectsData = [
   {
     name: 'synccart',
     tagLine: 'Vast, Online Marketplace Bonanza',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/synccart_qqd7ac.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/synccart.png',
     belongsTo: 'fullstack',
     featured: true,
     ownPage: true,
@@ -31,16 +31,16 @@ export const projectsData = [
   {
     name: 'caluri',
     tagLine: 'Track Your Health Journey Delightfully',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/caluri_g7jeje.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/caluri.png',
     belongsTo: 'react',
     featured: true,
     ownPage: true,
     stack: ['html', 'tailwind', 'react'],
   },
   {
-    name: 'queezy',
+    name: 'qeezy',
     tagLine: 'Playful Education Adventure Awaits',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850262/queezy_dhrate.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/queezy.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -49,7 +49,7 @@ export const projectsData = [
   {
     name: 'luxurify',
     tagLine: 'Furnish Your Home smartly',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/luxurify_jw8dfe.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/luxurify.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -58,7 +58,7 @@ export const projectsData = [
   {
     name: 'spentt',
     tagLine: 'Money Matters Simplified',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/spentt_jquaq2.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/spentt.png',
     belongsTo: 'react',
     featured: true,
     ownPage: true,
@@ -67,7 +67,7 @@ export const projectsData = [
   {
     name: 'tohdo',
     tagLine: 'Task Ahead, Just Do It',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/tohdo_xj31cf.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/tohdo.png',
     belongsTo: 'vanilla js',
     featured: true,
     ownPage: true,
@@ -77,7 +77,7 @@ export const projectsData = [
   {
     name: 'jobopia',
     tagLine: 'Organize Your Job Hunt',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/jobopia_jos4cx.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/jobopia.png',
     belongsTo: 'fullstack',
     liveLink: 'http://54.193.69.1/',
     stack: ['react', 'nodeJS', 'mongoDB'],
@@ -85,7 +85,7 @@ export const projectsData = [
   {
     name: 'aquazilla',
     tagLine: 'Hydrate Your Well-Being',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/aquazilla_t2suqk.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/aquazilla.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-aquazilla.vercel.app/',
     stack: ['html', 'css', 'vanillaJS'],
@@ -93,7 +93,7 @@ export const projectsData = [
   {
     name: 'cryptourist',
     tagLine: 'Invest in Your Future',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850265/cryptourist_jlyczn.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/cryptourist.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-cryptourist.vercel.app/',
     stack: ['html', 'css', 'react'],
@@ -101,7 +101,7 @@ export const projectsData = [
   {
     name: 'newsium',
     tagLine: 'Stay informed, stay current',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/newsium_uo0uoe.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/newsium.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-newsium24.vercel.app/',
     stack: ['html', 'css', 'react'],
@@ -109,7 +109,7 @@ export const projectsData = [
   {
     name: 'what the color',
     tagLine: 'Guess the Colors Mystery',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850263/what-the-color_iwkvet.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/what-the-color.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
     stack: ['html', 'tailwind', 'react'],
@@ -117,7 +117,7 @@ export const projectsData = [
   {
     name: 'todo',
     tagLine: 'Get Organized with Ease',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/todo_cy9mro.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/todo.png',
     belongsTo: 'react',
     liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
     stack: ['html', 'css', 'react'],
@@ -125,7 +125,7 @@ export const projectsData = [
   {
     name: 'etch-a-sketch',
     tagLine: 'Color to Create Happiness',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850266/etch-a-sketch_ik7xla.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/etch-a-sketch.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-etch-a-sketch.vercel.app/',
     stack: ['html', 'css', 'vanillaJS'],
@@ -133,7 +133,7 @@ export const projectsData = [
   {
     name: 'calculator',
     tagLine: 'Explore Beyond Numbers',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/calculator_tq8ed1.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/calculator.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-calculator.vercel.app/',
     stack: ['html', 'css', 'vanillaJS'],
@@ -141,7 +141,7 @@ export const projectsData = [
   {
     name: 'dice-game',
     tagLine: 'Roll the Fun Dice',
-    image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850264/dice-game_zc9vqd.png',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/dice-game.png',
     belongsTo: 'vanilla js',
     liveLink: 'https://iqbal-kang-225-dice-game.vercel.app/',
     stack: ['html', 'css', 'vanillaJS'],
@@ -149,7 +149,7 @@ export const projectsData = [
 ];
 
 export const singleProjectsData = [
-  // atw
+  // atw aws
   {
     name: 'atw',
     description: [
@@ -158,7 +158,7 @@ export const singleProjectsData = [
       'You can add posts to your favorites to build your very own gallery of favorite spots. You can comment, reply, and give thumbs up or react to reviews and posts. ATW sends live notifications for all of these events, so you stay updated and never miss out!',
       " Our easy-to-use interface allows you to easily log in and start engaging with the world around you. So get ready to explore! And don't forget to follow your friends and make new ones here at ATW. Join today and become part of the ATW revolution!",
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686174794/atwvideo2_1_hxfwrd.mp4',
+    video: 'https://atw-links.s3.us-west-1.amazonaws.com/atwvideoblurred.mov',
     liveSite: '',
     colors: ['#ee7c78', '#444444', '#fcf1f2', '#ffffff'],
     fonts: [
@@ -171,11 +171,11 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
-          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          { name: 'redux', image: 'https://tools-links.s3.us-west-1.amazonaws.com/redux.png' },
+          { name: 'react', image: 'https://tools-links.s3.us-west-1.amazonaws.com/react.png' },
           {
             name: 'tailwind',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/tailwind.png',
           },
         ],
       },
@@ -184,76 +184,76 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'postgresql',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/postgresql_smgop3.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/postgresql.png',
           },
           {
             name: 'express',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/express.png',
           },
-          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
+          { name: 'node', image: 'https://tools-links.s3.us-west-1.amazonaws.com/node.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
-          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'nginx', image: 'https://tools-links.s3.us-west-1.amazonaws.com/nginx.png' },
+          { name: 'aws', image: 'https://tools-links.s3.us-west-1.amazonaws.com/aws.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'user feedback platform',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/userfeedbackplatform_olaans.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/userfeedbackplatform.png',
       },
       {
         highlight: 'interactive dialogue flow',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/interactivedialogueflow_hcvu3d.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/interactivedialogueflow.png',
       },
       {
         highlight: 'tag team up',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/tagteamup_dtxoyx.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/tagteamup.png',
       },
       {
         highlight: 'real time notifications',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/realtimenotifications_cuq2nz.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/realtimenotifications.png',
       },
       {
         highlight: 'interactive comment reactions',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/interactivecommentreactions_jksyhf.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/interactivecommentreactions.png',
       },
       {
         highlight: 'follow restricted posts',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/followrestrictedposts_b5uie6.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/followrestrictedposts.png',
       },
       {
         highlight: 'connect & grow',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741147/connect_grow_rardyd.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/connect%26grow.png',
       },
       {
         highlight: 'trackable connections',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/trackableconnections_xqtwr6.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/trackableconnections.png',
       },
       {
         highlight: 'privacy personified',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741146/privacypersonified_rlcxes.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/privacypersonified.png',
       },
       {
         highlight: 'tag your posts',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741149/tagyourposts_glasx4.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/tagyourposts.png',
       },
       {
         highlight: 'intelligent suggestions',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741150/intelligentsuggestions_m1f3yj.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/intelligentsuggestions.png',
       },
       {
         highlight: 'hearts of fun',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741148/heartsoffun_iizrsj.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/heartsoffun.png',
       },
       {
         highlight: 'mapping exploration',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685741150/mappingexploration_n6q8ey.png',
+        image: 'https://atw-links.s3.us-west-1.amazonaws.com/mappingexploration.png',
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
@@ -261,7 +261,7 @@ export const singleProjectsData = [
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-around-the-world',
   },
 
-  // movieous
+  // movieous aws
   {
     name: 'movieous',
     description: [
@@ -269,7 +269,7 @@ export const singleProjectsData = [
       "We feature the most comprehensive and up-to-date database of filmographies spanning classic Hollywood to today's biggest blockbusters from around the globe. With user ratings, reviews and now showing and coming soon information, this is the perfect place for you to find out all you need to know about movies. With detailed reviews from savvy movie lovers like yourself, you'll never miss another gem or a forgettable flop.",
       'So explore your passion for cinema and browse our library right away!',
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1686180042/movieousvideo2_puaaup.mov',
+    video: 'https://movieous-links.s3.amazonaws.com/movieousvideo2.mov',
     liveSite: '',
     colors: [
       '#0e1428',
@@ -293,14 +293,14 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          { name: 'react', image: 'https://tools-links.s3.us-west-1.amazonaws.com/react.png' },
           {
             name: 'javascript',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/javascript.png',
           },
           {
             name: 'tailwind',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/tailwind.png',
           },
         ],
       },
@@ -309,68 +309,68 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'mongodb',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/mongodb_x2tz1l.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/mongodb.png',
           },
           {
             name: 'express',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/express.png',
           },
-          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
+          { name: 'node', image: 'https://tools-links.s3.us-west-1.amazonaws.com/node.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
-          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'nginx', image: 'https://tools-links.s3.us-west-1.amazonaws.com/nginx.png' },
+          { name: 'aws', image: 'https://tools-links.s3.us-west-1.amazonaws.com/aws.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'Watch Movie Previews',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742032/watchmoviepreviews_spykjp.png',
+        image: 'https://movieous-links.s3.amazonaws.com/watchmoviepreviews.png',
       },
       {
         highlight: 'Secure User Verification',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/secureuserverification_b94hkb.png',
+        image: 'https://movieous-links.s3.amazonaws.com/secureuserverification.png',
       },
       {
         highlight: 'Recover forgotten passwords',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/recoverforgottenpasswords_nvggyr.png',
+        image: 'https://movieous-links.s3.amazonaws.com/recoverforgottenpasswords.png',
       },
       {
         highlight: 'Toggleable Themes',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742030/toggleablethemes_etrebz.png',
+        image: 'https://movieous-links.s3.amazonaws.com/toggleablethemes.png',
       },
       {
         highlight: 'Smart Browse Recommendations',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742031/smartbrowserecommendations_l5uyhw.png',
+        image: 'https://movieous-links.s3.amazonaws.com/smartbrowserecommendations.png',
       },
       {
         highlight: 'Interactive Critiques',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742031/interactivecritiques_bhkwfa.png',
+        image: 'https://movieous-links.s3.amazonaws.com/interactivecritiques.png',
       },
       {
         highlight: 'Admin Domain Portal',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/admindomainportal_mv4wqv.png',
+        image: 'https://movieous-links.s3.amazonaws.com/admindomainportal.png',
       },
       {
         highlight: 'Background Video Processing',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/backgroundvideoprocessing_ssukbi.png',
+        image: 'https://movieous-links.s3.amazonaws.com/backgroundvideoprocessing.png',
       },
       {
         highlight: 'Dynamic Form Filling',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/dynamicformfilling_uepy87.png',
+        image: 'https://movieous-links.s3.amazonaws.com/dynamicformfilling.png',
       },
       {
         highlight: 'Easy Data Entry',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742029/easydataentry_hpojxn.png',
+        image: 'https://movieous-links.s3.amazonaws.com/easydataentry.png',
       },
       {
         highlight: 'Insights Before Submit',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742028/insightsbeforesubmit_zjhqsq.png',
+        image: 'https://movieous-links.s3.amazonaws.com/insightsbeforesubmit.png',
       },
     ],
     loginDetails: { email: 'iqbalkang18@gmail.com', password: 'Welcome2dsite' },
@@ -378,7 +378,7 @@ export const singleProjectsData = [
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous',
   },
 
-  // synccart
+  // synccart aws
   {
     name: 'synccart',
     description: [
@@ -387,7 +387,7 @@ export const singleProjectsData = [
       'Not only do we offer a great selection and top quality, but our prices are unbeatable as well! Let us be your one-stop-shop for healthy and safe supplements.',
       'Start shopping your way to a healthier you with SyncCart today!',
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685740906/synccartvideo2_rnqs8x.mp4',
+    video: 'https://synccart-links.s3.us-west-1.amazonaws.com/synccartvideo2.mp4',
     liveSite: '',
     colors: ['#ffffff', '#000000', '#bfdbfe', '#ef4444', '#7f7f7f', '#ebb305'],
     fonts: [
@@ -400,70 +400,70 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
-          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          { name: 'redux', image: 'https://tools-links.s3.us-west-1.amazonaws.com/redux.png' },
+          { name: 'react', image: 'https://tools-links.s3.us-west-1.amazonaws.com/react.png' },
           {
             name: 'tailwind',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/tailwind.png',
           },
         ],
       },
       {
         type: 'back end',
         tools: [
-          { name: 'mysql', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/mysql_adan4k.png' },
+          { name: 'mysql', image: 'https://tools-links.s3.us-west-1.amazonaws.com/mysql.png' },
           {
             name: 'express',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/express_udyzvd.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/express.png',
           },
-          { name: 'node', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/node_ygjwrq.png' },
+          { name: 'node', image: 'https://tools-links.s3.us-west-1.amazonaws.com/node.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'nginx', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/nginx_gsyhxg.png' },
-          { name: 'aws', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/aws_eeylur.png' },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'nginx', image: 'https://tools-links.s3.us-west-1.amazonaws.com/nginx.png' },
+          { name: 'aws', image: 'https://tools-links.s3.us-west-1.amazonaws.com/aws.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'customer feedback',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/customerfeedback_kd2s2w.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/customerfeedback.png',
       },
       {
         highlight: 'stock controlled shopping',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/stockcontrolledshopping_mqnil2.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/stockcontrolledshopping.png',
       },
       {
         highlight: 'product ratings insight',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/productratingsinsight_gmkfe3.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/productratingsinsight.png',
       },
       {
         highlight: 'stock safeguard',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/stocksafeguard_z1mune.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/stocksafeguard.png',
       },
       {
         highlight: 'address autosave and populate',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/addressautosaveandpopulate_ht8jtg.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/addressautosaveandpopulate.png',
       },
       {
         highlight: 'retain shopping cart',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/retainshoppingcart_klgcck.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/retainshoppingcart.png',
       },
       {
         highlight: 'admin control panel',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/admincontrolpanel_gdzfz5.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/admincontrolpanel.png',
       },
       {
         highlight: 'manage product inventory',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742300/manageproductinventory_exnyvp.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/manageproductinventory.png',
       },
       {
         highlight: 'elevate user privileges',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742299/elevateprivileges_cd7sr2.png',
+        image: 'https://synccart-links.s3.us-west-1.amazonaws.com/elevateprivileges.png',
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
@@ -471,7 +471,7 @@ export const singleProjectsData = [
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-synccart',
   },
 
-  // caluri
+  // caluri aws
   {
     name: 'caluri',
     description: [
@@ -481,7 +481,7 @@ export const singleProjectsData = [
       'With our revolutionary calorie tracking website, you’ll be able to easily monitor your daily diet, set goals, and see improvements with just a few clicks. Our extensive database of foods and their nutrition values makes it easy for you to track your calories and nutrients, so you can make smarter decisions about what you eat and when.',
       'Say goodbye to complicated charts and fad diets - let Caluri guide you to smarter eating and a healthier you. Join us today!',
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738144/calurivideo2_iwmtlh.mp4',
+    video: 'https://caluri-links.s3.us-west-1.amazonaws.com/calurivideo2.mp4',
     liveSite: '',
     colors: [
       '#001c06',
@@ -505,11 +505,11 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
-          { name: 'react', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/react_hveitk.png' },
+          { name: 'redux', image: 'https://tools-links.s3.us-west-1.amazonaws.com/redux.png' },
+          { name: 'react', image: 'https://tools-links.s3.us-west-1.amazonaws.com/react.png' },
           {
             name: 'tailwind',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/tailwind.png',
           },
         ],
       },
@@ -518,36 +518,36 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'netlify',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/netlify.png',
           },
-          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'vercel', image: 'https://tools-links.s3.us-west-1.amazonaws.com/vercel.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'personalized tracking',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/personalizedtracking_jxa860.png',
+        image: 'https://caluri-links.s3.us-west-1.amazonaws.com/personalizedtracking.png',
       },
       {
         highlight: 'track macros',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/trackmacros_tqo4em.png',
+        image: 'https://caluri-links.s3.us-west-1.amazonaws.com/trackmacros.png',
       },
       {
         highlight: 'group meals',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742505/groupmeals_bcpatg.png',
+        image: 'https://caluri-links.s3.us-west-1.amazonaws.com/groupmeals.png',
       },
       {
         highlight: 'update info',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742503/updateinfo_fjm7tr.png',
+        image: 'https://caluri-links.s3.us-west-1.amazonaws.com/updateinfo.png',
       },
     ],
     liveLink: 'https://iqbal-kang-225-caluri.vercel.app/info',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-caluri',
   },
 
-  // spentt
+  // spentt aws
   {
     name: 'spentt',
     description: [
@@ -557,7 +557,7 @@ export const singleProjectsData = [
       "With our state-of-the-art tracking system, you'll be able to monitor and manage all of your spending and investment activities in one convenient place. No more need to switch between multiple accounts or applications to get a complete financial overview. Using Spentt, you'll have everything you need to make informed financial decisions and start building wealth.",
       "With our revolutionary expense tracker, you'll have complete peace of mind knowing exactly when you're spending and investing - and finally, reaching your financial goals. Join spentt, get the most out of every penny and start your financial journey today!",
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738330/spenttvideo_2_mqyda2.mp4',
+    video: 'https://spentt-links.s3.amazonaws.com/spenttvideo+2.mp4',
     liveSite: '',
     colors: ['#ecdcfa', '#271d30', '#88838e', '#ffffff', '#faff7f', '#c617d6', '#1626b5'],
     fonts: [
@@ -570,14 +570,14 @@ export const singleProjectsData = [
       {
         type: 'front end',
         tools: [
-          { name: 'redux', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/redux_ycyl8b.png' },
+          { name: 'redux', image: 'https://tools-links.s3.us-west-1.amazonaws.com/redux.png' },
           {
             name: 'javascript',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/javascript.png',
           },
           {
             name: 'tailwind',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/tailwind_vykxh7.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/tailwind.png',
           },
         ],
       },
@@ -586,48 +586,48 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'netlify',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/netlify.png',
           },
-          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'vercel', image: 'https://tools-links.s3.us-west-1.amazonaws.com/vercel.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'Low Balance Alerts',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/lowbalancealerts_pm0tfj.png',
+        image: 'https://spentt-links.s3.amazonaws.com/lowbalancealerts.png',
       },
       {
         highlight: 'Live Asset Pricing',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/liveassetpricing_ozjwle.png',
+        image: 'https://spentt-links.s3.amazonaws.com/liveassetpricing.png',
       },
       {
         highlight: 'Manage Financial Groups',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/managefinancialgroups_jlskao.png',
+        image: 'https://spentt-links.s3.amazonaws.com/managefinancialgroups.png',
       },
       {
         highlight: 'Insightful Investment Gains',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/insightfulinvestmentgains_mfhqve.png',
+        image: 'https://spentt-links.s3.amazonaws.com/insightfulinvestmentgains.png',
       },
       {
         highlight: 'Crunching Loss Data',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742968/crunchinglossdata_qfypvi.png',
+        image: 'https://spentt-links.s3.amazonaws.com/crunchinglossdata.png',
       },
     ],
     liveLink: 'https://iqbal-kang-225-spentt.vercel.app/',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-spentt',
   },
 
-  // queezy
+  // qeezy aws
   {
-    name: 'queezy',
+    name: 'qeezy',
     description: [
-      "Welcome to Queezy – the ultimate destination for quizzers! Here you can find a wide variety of exciting quizzes to play, or if you're feeling creative, you can even create your own! Our platform is designed to be intuitive and easy to use, so you can get playing and creating in no time. With an array of colorful and eye-catching graphics, inviting avatars, fun animations and sounds, Queezy will make sure you have a great time",
-      "Whether you're a quiz enthusiast, a trivia buff, or just looking to kill some time, Queezy has the perfect quiz for you. So what are you waiting for? Join the Queezy community to test your knowledge, and prove that you can be a master of random trivia.",
+      "Welcome to qeezy – the ultimate destination for quizzers! Here you can find a wide variety of exciting quizzes to play, or if you're feeling creative, you can even create your own! Our platform is designed to be intuitive and easy to use, so you can get playing and creating in no time. With an array of colorful and eye-catching graphics, inviting avatars, fun animations and sounds, qeezy will make sure you have a great time",
+      "Whether you're a quiz enthusiast, a trivia buff, or just looking to kill some time, qeezy has the perfect quiz for you. So what are you waiting for? Join the qeezy community to test your knowledge, and prove that you can be a master of random trivia.",
       'So, don’t delay, get queazeying!',
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685737797/queezyvideo2_zoy575.mp4',
+    video: 'https://qeezy-links.s3.us-west-1.amazonaws.com/queezyvideo2.mp4',
     liveSite: '',
     colors: ['#fd0200', '#f3a13c', '#0542b8', '#136a04', '#000000', '#ffffff'],
     fonts: [
@@ -642,59 +642,59 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'javascript',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/javascript.png',
           },
-          { name: 'sass', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/sass_jmt7bq.png' },
-          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
+          { name: 'sass', image: 'https://tools-links.s3.us-west-1.amazonaws.com/sass.png' },
+          { name: 'html', image: 'https://tools-links.s3.us-west-1.amazonaws.com/html.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          { name: 'vercel', image: 'https://tools-links.s3.us-west-1.amazonaws.com/vercel.png' },
           {
             name: 'netlify',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/netlify.png',
           },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'create or play',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/createorplay_odcvc6.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/createorplay.png',
       },
       {
         highlight: 'Points Allocation System',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/pointsallocationsystem_lmoz7o.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/pointsallocationsystem.png',
       },
       {
         highlight: 'Timed Challenge',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/timedchallenge_thct1j.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/timedchallenge.png',
       },
       {
         highlight: 'True/false questions',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/truefalse_fjs6gz.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/truefalse.png',
       },
       {
         highlight: 'MCQ questions',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/mcq_jbezpw.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/mcq.png',
       },
       {
         highlight: 'Explore Quizzes',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/explorequizzes_umotlr.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/explorequizzes.png',
       },
       {
         highlight: 'Dynamic Leaderboard',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742708/dynamicleaderboard_sgsnlj.png',
+        image: 'https://qeezy-links.s3.us-west-1.amazonaws.com/dynamicleaderboard.png',
       },
     ],
     liveLink: 'https://iqbal-kang-225-qeezy.vercel.app/',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-qeezy',
   },
 
-  // tohdo
+  // tohdo aws
   {
     name: 'tohdo',
     description: [
@@ -704,7 +704,7 @@ export const singleProjectsData = [
       'Using Tohdo you can safely say goodbye to lost notes and lists.',
       " Don't wait, take back control of your daily productivity and get organized with Tohdo, so you can seize the moment and get things done – without the stress.",
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738702/tohdovideo2_yoxmst.mp4',
+    video: 'https://tohdo-links.s3.us-west-1.amazonaws.com/tohdovideo2.mp4',
     liveSite: '',
     colors: ['#330033', '#ffffff', '#000000', '#bc1119', '#a3892e', '#678c2a'],
     fonts: [
@@ -719,51 +719,51 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'javascript',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/javascript.png',
           },
-          { name: 'css', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/css_sbtyjv.png' },
-          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
+          { name: 'css', image: 'https://tools-links.s3.us-west-1.amazonaws.com/css.png' },
+          { name: 'html', image: 'https://tools-links.s3.us-west-1.amazonaws.com/html.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          { name: 'vercel', image: 'https://tools-links.s3.us-west-1.amazonaws.com/vercel.png' },
           {
             name: 'netlify',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/netlify.png',
           },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'Organize Tasks Priorities',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743097/organizetaskspriorities_oeo9t4.png',
+        image: 'https://tohdo-links.s3.us-west-1.amazonaws.com/organizetaskspriorities.png',
       },
       {
         highlight: 'Organize todos',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/organizetodos_zqlcv5.png',
+        image: 'https://tohdo-links.s3.us-west-1.amazonaws.com/organizetodos.png',
       },
       {
         highlight: 'Track completed tasks',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/trackcompletedtasks_o48utt.png',
+        image: 'https://tohdo-links.s3.us-west-1.amazonaws.com/trackcompletedtasks.png',
       },
       {
         highlight: 'customize todo grouping',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743098/customizetodogrouping_tzhrl0.png',
+        image: 'https://tohdo-links.s3.us-west-1.amazonaws.com/customizetodogrouping.png',
       },
       {
         highlight: 'Cross-Group Visibility',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685743097/crossgroupvisibility_exd9nu.png',
+        image: 'https://tohdo-links.s3.us-west-1.amazonaws.com/crossgroupvisibility.png',
       },
     ],
     liveLink: 'https://iqbal-kang-225-tohdo.vercel.app/',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-tohdo',
   },
 
-  //luxurify
+  //luxurify aws
   {
     name: 'luxurify',
     description: [
@@ -772,7 +772,7 @@ export const singleProjectsData = [
       'With our vast selection of items from sofas to desks, we are sure to have something that will perfectly fit your lifestyle. Whether you are looking to update your living room with a new couch, or want to spruce up your workspace with an executive chair, Luxurify has just what you need. We only source top of the line pieces from the leading manufacturers, so you can be sure that your new furniture will stand the test of time.',
       'Browse through our extensive selection of products and find the perfect piece for your desired space and create an individual look that will turn heads. Experience the luxury of Luxurify today and make your house the envy of the street!',
     ],
-    video: 'https://res.cloudinary.com/dydbhumso/video/upload/v1685738247/luxurifyvideo2_nbkplk.mp4',
+    video: 'https://luxurify-links.s3.us-west-1.amazonaws.com/luxurifyvideo2.mp4',
     liveSite: '',
     colors: ['#feeab9', '#700000', '#ffffff', '#da0612', '#5f4201'],
     fonts: [
@@ -791,36 +791,36 @@ export const singleProjectsData = [
         tools: [
           {
             name: 'javascript',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/javascript_wjyeip.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/javascript.png',
           },
-          { name: 'sass', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/sass_jmt7bq.png' },
-          { name: 'html', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/html_mqjfwh.png' },
+          { name: 'sass', image: 'https://tools-links.s3.us-west-1.amazonaws.com/sass.png' },
+          { name: 'html', image: 'https://tools-links.s3.us-west-1.amazonaws.com/html.png' },
         ],
       },
       {
         type: 'deployment',
         tools: [
-          { name: 'vercel', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837430/vercel_qbgcxi.png' },
+          { name: 'vercel', image: 'https://tools-links.s3.us-west-1.amazonaws.com/vercel.png' },
           {
             name: 'netlify',
-            image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/netlify_edzes9.png',
+            image: 'https://tools-links.s3.us-west-1.amazonaws.com/netlify.png',
           },
-          { name: 'github', image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685837429/github_q0owbf.png' },
+          { name: 'github', image: 'https://tools-links.s3.us-west-1.amazonaws.com/github.png' },
         ],
       },
     ],
     highlights: [
       {
         highlight: 'Filterable Product Search',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/filterableproductsearch_cym0cr.png',
+        image: 'https://luxurify-links.s3.us-west-1.amazonaws.com/filterableproductsearch.png',
       },
       {
         highlight: 'Retain Shopping Cart',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/retainshoppingcart_h6t6ir.png',
+        image: 'https://luxurify-links.s3.us-west-1.amazonaws.com/retainshoppingcart.png',
       },
       {
         highlight: 'Showcase Selection',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685742859/showcaseselection_rcbq27.png',
+        image: 'https://luxurify-links.s3.us-west-1.amazonaws.com/showcaseselection.png',
       },
     ],
     liveLink: 'https://iqbal-kang-225-luxurify.vercel.app/',

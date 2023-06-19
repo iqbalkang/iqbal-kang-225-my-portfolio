@@ -237,7 +237,7 @@ const renderProjectDescription = () => {
 const changeVideoPlaybackSpeed = () => {
   const video = document.querySelector('video');
 
-  video.playbackRate = 2.0;
+  video.playbackRate = 1.25;
   video.pause();
 
   setTimeout(() => {

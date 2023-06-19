@@ -164,7 +164,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'Josefin Sans',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -286,7 +286,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'roboto',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -393,7 +393,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'roboto',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -498,7 +498,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'poppins',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -563,7 +563,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'poppins',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -633,7 +633,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'montserrat',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -710,7 +710,7 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'poppins',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [
@@ -778,11 +778,11 @@ export const singleProjectsData = [
     fonts: [
       {
         name: 'poppins',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
       {
         name: 'Cinzel Decorative',
-        image: 'https://res.cloudinary.com/dydbhumso/image/upload/v1685850178/montserratfont_yjqxna.png',
+        image: 'https://misc-links.s3.us-west-1.amazonaws.com/montserratfont.png',
       },
     ],
     stack: [

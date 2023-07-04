@@ -79,7 +79,7 @@ export const projectsData = [
     tagLine: 'Organize Your Job Hunt',
     image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/jobopia.png',
     belongsTo: 'fullstack',
-    liveLink: 'http://54.193.69.1/',
+    liveLink: 'http://184.169.245.191/landing',
     stack: ['react', 'nodeJS', 'mongoDB'],
   },
   {

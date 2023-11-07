@@ -12,6 +12,7 @@ const bvt = document.querySelector('.timeline--bvt');
 const tyler = document.querySelector('.timeline--tyler');
 const salvation = document.querySelector('.timeline--salvation');
 const btvIntern = document.querySelector('.timeline--bvtintern');
+const freelance = document.querySelector('.timeline--freelance');
 
 const experienceTL = gsap.timeline();
 const eventTL = gsap.timeline();
@@ -49,7 +50,9 @@ eventTL
   .to(tyler, { opacity: 1, duration: 0.05, delay: 0.15 }, '<+0.1')
   .from(tyler, { width: '90%', duration: 0.75 }, '<')
   .to(btvIntern, { opacity: 1, duration: 0.05, delay: 0.15 })
-  .from(btvIntern, { width: '90%', duration: 0.75 }, '<');
+  .from(btvIntern, { width: '70%', duration: 0.75 }, '<')
+  .to(freelance, { opacity: 1, duration: 0.05 }, '<+0.3')
+  .from(freelance, { width: '75%', duration: 0.75 }, '<');
 
 ScrollTrigger.create({
   trigger: timelineSection,

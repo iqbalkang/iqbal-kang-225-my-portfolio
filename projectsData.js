@@ -37,6 +37,22 @@ export const projectsData = [
     ownPage: true,
     stack: ['html', 'tailwind', 'react'],
   },
+    {
+    name: 'marcus',
+    tagLine: 'Hydrate Your Well-Being',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/aquazilla.png',
+    belongsTo: 'vanilla js',
+    liveLink: 'https://www.ringgear.in/',
+    stack: ['html', 'css', 'vanillaJS'],
+  },
+  {
+    name: 'Rocklin Industrial Parking',
+    tagLine: 'Hydrate Your Well-Being',
+    image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/aquazilla.png',
+    belongsTo: 'vanilla js',
+    liveLink: 'https://www.rocklinindustrialparking.com/',
+    stack: ['html', 'css', 'vanillaJS'],
+  },
   {
     name: 'qeezy',
     tagLine: 'Playful Education Adventure Awaits',
@@ -119,7 +135,7 @@ export const projectsData = [
     tagLine: 'Get Organized with Ease',
     image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/todo.png',
     belongsTo: 'react',
-    liveLink: 'https://iqbal-kang-225-what-the-color.vercel.app/',
+    liveLink: 'https://iqbal-kang-225-todo-react.vercel.app/',
     stack: ['html', 'css', 'react'],
   },
   {

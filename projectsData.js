@@ -36,7 +36,7 @@ export const projectsData = [
     ownPage: true,
     stack: ['html', 'tailwind', 'react'],
   },
-    {
+  {
     name: 'marcus',
     tagLine: 'Superior flywheel ring gears',
     image: 'https://freelance-links.s3.us-west-1.amazonaws.com/marcus.png',
@@ -273,7 +273,7 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
-    liveLink: 'http://atw.wiki/',
+    liveLink: 'http://aroundtheworld.site/',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-around-the-world',
   },
 
@@ -390,7 +390,7 @@ export const singleProjectsData = [
       },
     ],
     loginDetails: { email: 'iqbalkang18@gmail.com', password: 'Welcome2dsite' },
-    liveLink: 'http://movieous.wiki/',
+    liveLink: 'http://movieous.site/',
     githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous',
   },
 

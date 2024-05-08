@@ -274,7 +274,7 @@ export const singleProjectsData = [
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
     liveLink: 'http://aroundtheworld.site/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-around-the-world',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-around-the-world',
   },
 
   // movieous aws
@@ -391,7 +391,7 @@ export const singleProjectsData = [
     ],
     loginDetails: { email: 'iqbalkang18@gmail.com', password: 'Welcome2dsite' },
     liveLink: 'http://movieous.site/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-movieous',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-movieous',
   },
 
   // synccart aws
@@ -484,7 +484,7 @@ export const singleProjectsData = [
     ],
     loginDetails: { email: 'johndoe@gmail.com', password: 'Welcome2dsite' },
     liveLink: 'http://synccart.wiki',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-synccart',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-synccart',
   },
 
   // caluri aws
@@ -560,7 +560,7 @@ export const singleProjectsData = [
       },
     ],
     liveLink: 'https://iqbal-kang-225-caluri.vercel.app/info',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-caluri',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-caluri',
   },
 
   // spentt aws
@@ -632,7 +632,7 @@ export const singleProjectsData = [
       },
     ],
     liveLink: 'https://iqbal-kang-225-spentt.vercel.app/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-spentt',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-spentt',
   },
 
   // qeezy aws
@@ -707,7 +707,7 @@ export const singleProjectsData = [
       },
     ],
     liveLink: 'https://iqbal-kang-225-qeezy.vercel.app/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-qeezy',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-qeezy',
   },
 
   // tohdo aws
@@ -776,7 +776,7 @@ export const singleProjectsData = [
       },
     ],
     liveLink: 'https://iqbal-kang-225-tohdo.vercel.app/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-tohdo',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-tohdo',
   },
 
   //luxurify aws
@@ -840,6 +840,6 @@ export const singleProjectsData = [
       },
     ],
     liveLink: 'https://iqbal-kang-225-luxurify.vercel.app/',
-    githubLink: 'https://github.com/iqbalkang225/iqbal-kang-225-luxurify',
+    githubLink: 'https://github.com/iqbalkang/iqbal-kang-225-luxurify',
   },
 ];

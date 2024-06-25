@@ -24,6 +24,7 @@ export const projectsData = [
     tagLine: 'Vast, Online Marketplace Bonanza',
     image: 'https://projects-art-links.s3.us-west-1.amazonaws.com/synccart.png',
     belongsTo: 'fullstack',
+    featured: true,
     ownPage: true,
     stack: ['react', 'nodeJS', 'mySQL'],
   },

@@ -51,7 +51,7 @@ export const projectsData = [
     image: 'https://freelance-links.s3.us-west-1.amazonaws.com/rocklinindustrialparking.png',
     belongsTo: 'vanilla js',
     featured: true,
-    liveLink: 'https://www.rocklinindustrialparking.com/',
+    liveLink: 'rocklin-industrial-parking-git-main-iqbalkang225.vercel.app',
     stack: ['pug', 'gsap', 'webpack'],
   },
   {
